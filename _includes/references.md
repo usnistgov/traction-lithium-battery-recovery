@@ -1,137 +1,247 @@
 <ol>
-<li>Reslan, M., Last, N., Mathur, N., Morris, K. C., & Ferrero, V. (2022). Circular Economy: A Product Life Cycle Perspective on Engineering and Manufacturing Practices. Procedia CIRP, 105, 851–858. https://doi.org/10.1016/j.procir.2022.02.141</li>
+<li>Amalia D, Singh P, Zhang W, Nikoloski AN (2025) A review of pretreatment methods for spent lithium-ion batteries to produce black mass–comparison of processes of Asia Pacific recyclers. Mineral processing and extractive metallurgy review, 46(5), 626-643. https://doi.org/10.1080/08827508.2024.2367420</li>
 <br>
-<li>Barkmeyer, E. J., Christopher, N., Feng, S. C., Fowler, J. E., Frechette, S. P., Jones, A., Jurrens, K., Lyons, K., McLean, C. R., Pratt, M., Scott, H. A., Senehi, M. K., Sriram, R. D., & Wallace, E. K. (1996). SIMA reference architecture, part 1: Activity models (No. NIST IR 5939; p. NIST IR 5939). National Institute of Standards and Technology. https://doi.org/10.6028/NIST.IR.5939</li> 
+<li>Bae H, Kim Y (2021) Technologies of lithium recycling from waste lithium ion batteries: a review. Materials advances, 2(10), 3234-3250. https://doi.org/10.1039/D1MA00216C</li>
 <br>
-<li>Ferrero, V., Morris, K. C., & Hapuwatte, B. (2022). Adapting Consumer Product Design to the Circular Economy. Volume 3B: 48th Design Automation Conference (DAC), V03BT03A049. https://doi.org/10.1115/DETC2022-89542</li>
+<li>Bandhauer TM, Garimella S, Fuller TF (2011) A critical review of thermal issues in lithium-ion batteries. Journal of the electrochemical society, 158(3), R1. https://doi.org/10.1149/1.3515880</li>
 <br>
-<li>Fu, H., He, W., Feng, K., Guo, X., & Hou, C. (2024). Understanding consumers’ willingness to pay for circular products: A multiple model-comparison approach. Sustainable Production and Consumption, 45, 67–78. https://doi.org/10.1016/j.spc.2023.12.005</li> 
+<li>Baum ZJ, Bird RE, Yu X, Ma J (2022) Lithium-ion battery recycling- overview of techniques and trends. ACS Energy Letters, 7(2):712-719. https://doi.org/10.1021/acsenergylett.1c02602</li>
 <br>
-<li>Boyer, R. H. W., Hunka, A. D., Linder, M., Whalen, K. A., & Habibi, S. (2021). Product Labels for the Circular Economy: Are Customers Willing to Pay for Circular? Sustainable Production and Consumption, 27, 61–71. https://doi.org/10.1016/j.spc.2020.10.010</li>
+<li>Bertuol DA, Toniasso C, Jiménez BM, Meili L, Dotto GL, Tanabe EH, Aguiar ML (2015) Application of spouted bed elutriation in the recycling of lithium ion batteries. Journal of Power Sources, 275, 627-632. https://doi.org/10.1016/j.jpowsour.2014.11.036</li>
 <br>
-<li>Wang, Y., & Hazen, B. T. (2016). Consumer product knowledge and intention to purchase remanufactured products. International Journal of Production Economics, 181, 460–469. https://doi.org/10.1016/j.ijpe.2015.08.031</li>
+<li>Bhar M, Ghosh S, Krishnamurthy S, Kaliprasad Y, Martha SK (2023) A review on spent lithium-ion battery recycling: from collection to black mass recovery. RSC Sustainability, 1(5), 1150-1167. https://doi.org/10.1039/D3SU00086A</li>
 <br>
-<li>Testa, F., Marullo, C., Gusmerotti, N. M., & Di Iorio, V. (2024). Exploring circular consumption: Circular attitudes and their influence on consumer behavior across the product lifecycle. Business Strategy and the Environment, 33(7), 6961–6983. https://doi.org/10.1002/bse.3849</li> 
+<li>Bird R, Baum ZJ, Yu X, Ma J (2022) The regulatory environment for lithium-ion battery recycling. ACS Energy Letters, 7(2):736-740. https://doi.org/10.1021/acsenergylett.1c02724</li>
 <br>
-<li>Goucher-Lambert, K., & Cagan, J. (2015). The Impact of Sustainability on Consumer Preference Judgments of Product Attributes. Journal of Mechanical Design, 137(8), 081401. https://doi.org/10.1115/1.4030271</li> 
+<li>Blömeke S, Scheller C, Cerdas F, Thies C, Hachenberger R, Gonter M, Herrmann C, Spengler TS (2022) Material and energy flow analysis for environmental and economic impact assessment of industrial recycling routes for lithium-ion traction batteries. Journal of Cleaner Production, 377, 134344. https://doi.org/10.1016/j.jclepro.2022.134344</li>
 <br>
-<li>Bovea, M. D., Ibáñez-Forés, V., Pérez-Belis, V., Juan, P., Braulio-Gonzalo, M., & Díaz-Ávalos, C. (2018). Incorporation of Circular Aspects into Product Design and Labelling: Consumer Preferences. Sustainability, 10(7), 2311. https://doi.org/10.3390/su10072311</li>
+<li>Bobba S, Mathieux F, Ardente F, Blengini GA, Cusenza MA, Podias A, Pfrang A (2018) Life Cycle Assessment of repurposed electric vehicle batteries: an adapted method based on modelling energy flows. Journal of Energy Storage, 19, 213-225. https://doi.org/10.1016/j.est.2018.07.008</li>
 <br>
-<li>Gore, C. (2024). Consumer Perspectives on Battery Electric Vehicles: A Literature Review (No. NIST TN 2306; p. NIST TN 2306). National Institute of Standards and Technology. https://doi.org/10.6028/NIST.TN.2306</li> 
+<li>Brandl M, Gall H, Wenger M, Lorentz V, Giegerich M, Baronti F, Fantechi G, Fanucci L, Roncella R, Saletti R, Saponara S, Thaler A, Cifrain M, Prochazka W (2012) Batteries and battery management systems for electric vehicles. 2012 Design, Automation & Test in Europe Conference & Exhibition (DATE), pp 971-976. https://doi.org/10.1109/DATE.2012.6176637</li>
 <br>
-<li>Geissdoerfer, M., Pieroni, M. P. P., Pigosso, D. C. A., & Soufani, K. (2020). Circular business models: A review. Journal of Cleaner Production, 277, 123741. https://doi.org/10.1016/j.jclepro.2020.123741</li>
+<li>Brückner L, Frank J, Elwert T (2020) Industrial recycling of lithium-ion batteries—a critical review of metallurgical process routes. Metals, 10(8), 1107. https://doi.org/10.3390/met10081107</li>
 <br>
-<li>Ingulfsvann, A. S. (2020). What does the brand tell us? – Sustainability and responsibility in a circular perspective. Journal of Cleaner Production, 246, 118993. https://doi.org/10.1016/j.jclepro.2019.118993</li> 
+<li>Bruno M, Fiore S (2023) Material flow analysis of lithium-ion battery recycling in Europe: environmental and economic implications. Batteries, 9(4), 231. https://doi.org/10.3390/batteries9040231</li>
 <br>
-<li>Poli, C. (2001). Design for manufacturing: A structured approach. Butterworth-Heinemann.</li> 
+<li>Casals LC, García BA, Cremades LV (2017) Electric vehicle battery reuse: Preparing for a second life. Journal of Industrial Engineering and Management, 10(2), 266-285. https://doi.org/10.3926/jiem.2009</li>
 <br>
-<li>Boothroyd, G., & Alting, L. (1992). Design for Assembly and Disassembly. CIRP Annals, 41(2), 625–636. https://doi.org/10.1016/S0007-8506(07)63249-1</li> 
+<li>Catton J, Walker SB, McInnis P, Fowler M, Fraser R, Young SB, Gaffney B (2017) Comparative safety risk and the use of repurposed EV batteries for stationary energy storage. 2017 IEEE International Conference on Smart Energy Grid Engineering (SEGE), pp 200-209. https://doi.org/10.1109/SEGE.2017.8052799</li>
 <br>
-<li>Giudice, F., La Rosa, G., & Risitano, A. (2006). Product Design for the Environment: A Life Cycle Approach (0 ed.). CRC Press. https://doi.org/10.1201/9781420001044</li>
+<li>Chagnes A, Pospiech B (2013) A brief review on hydrometallurgical technologies for recycling spent lithium-ion batteries. Journal of Chemical Technology & Biotechnology, 88(7), 1191-1199. https://doi.org/10.1002/jctb.4053</li>
 <br>
-<li>Hapuwatte, B. M., Karsli, S., Last, N., Aher, G., Holtta-Otto, K., Ramanujan, D., Morris, K., Jawahir, I. S., & Ferrero, V. (n.d.). Product Design Principles for Circular Economy: A Review.</li>
+<li>Chen M, Ma X, Chen B, Arsenault R, Karlson P, Simon N, Wang Y (2019) Recycling end-of-life electric vehicle lithium-ion batteries. Joule, 3(11), 2622-2646. https://doi.org/10.1016/j.joule.2019.09.014</li>
 <br>
-<li>Guillard, V., Gaucel, S., Fornaciari, C., Angellier-Coussy, H., Buche, P., & Gontard, N. (2018). The Next Generation of Sustainable Food Packaging to Preserve Our Environment in a Circular Economy Context. Frontiers in Nutrition, 5, 121. https://doi.org/10.3389/fnut.2018.00121</li> 
+<li>Chen SC, Wan CC, Wang YY (2005) Thermal analysis of lithium-ion batteries. Journal of power sources, 140(1), 111-124. https://doi.org/10.1016/j.jpowsour.2004.05.064</li>
 <br>
-<li>Titirici, M.-M., White, R. J., Brun, N., Budarin, V. L., Su, D. S., Del Monte, F., Clark, J. H., & MacLachlan, M. J. (2015). Sustainable carbon materials. Chemical Society Reviews, 44(1), 250–290. https://doi.org/10.1039/C4CS00232F</li>
+<li>Chung HC (2021) Charge and discharge profiles of repurposed LiFePO4 batteries based on the UL 1974 standard. Scientific Data, 8(1), 165. https://doi.org/10.1038/s41597-021-00954-3</li>
 <br>
-<li>Kahlert, S., & Bening, C. R. (2022). Why pledges alone will not get plastics recycled: Comparing recyclate production and anticipated demand. Resources, Conservation and Recycling, 181, 106279. https://doi.org/10.1016/j.resconrec.2022.106279</li> 
+<li>Ci S, Lin N, Wu D (2016) Reconfigurable battery techniques and systems: A survey. IEEE Access, 4, 1175-1189. https://doi.org/10.1109/ACCESS.2016.2545338</li>
 <br>
-<li>Habib, K., Hansdóttir, S. T., & Habib, H. (2020). Critical metals for electromobility: Global demand scenarios for passenger vehicles, 2015–2050. Resources, Conservation and Recycling, 154, 104603. https://doi.org/10.1016/j.resconrec.2019.104603</li> 
+<li>Cornelio A, Zanoletti A, Bontempi E (2024) Recent progress in pyrometallurgy for the recovery of spent lithium-ion batteries: A review of state-of-the-art developments. Current Opinion in Green and Sustainable Chemistry, 46, 100881. https://doi.org/10.1016/j.cogsc.2024.100881</li>
 <br>
-<li>Chatterjee, A., Minsk, O., Triebe, M. J., Hapuwatte, B. M., Kietzer, D., Kittali-Weidner, S., Morris, K. C., & Mathur, N. (2024). Investigating the use of network analysis metrics to benchmark Industrial Symbiosis development. Journal of Cleaner Production, 469, 143078. https://doi.org/10.1016/j.jclepro.2024.143078</li>
+<li>Costa H (2025) Shredding of Lithium-Ion Batteries: Overview and Industrial. Waste Management for a Sustainable Future-Technologies, Strategies and Global Perspectives: Technologies, Strategies and Global Perspectives, 77.</li>
 <br>
-<li>International Organization for Standardization. (2024c). Circular economy—Vocabulary, principles and guidance for implementation (ISO No. 59004:2024).</li> 
+<li>da Silveira Leite D, Carvalho PLG, de Lemos LR, Mageste AB, Rodrigues GD (2017) Hydrometallurgical separation of copper and cobalt from lithium-ion batteries using aqueous two-phase systems. Hydrometallurgy, 169, 245-252. https://doi.org/10.1016/j.hydromet.2017.01.002</li>
 <br>
-<li>Vimal, K. E. K., Agarwal, V., & Mathiyazhagan, K. (2022). Barriers in the adoption of buyback schemes for used plastic packaging material – a contextual relationship analysis. Resources, Conservation and Recycling, 178, 106084. https://doi.org/10.1016/j.resconrec.2021.106084</li>
+<li>Deng B, Eddy L, Wyss KM, Tiwary CS, Tour JM (2025) Flash Joule heating for synthesis, upcycling and remediation. Nature Reviews Clean Technology, 1(1), 32-54. https://doi.org/10.1038/s44359-024-00002-4</li>
 <br>
-<li>Barnes, K., Blaauw, D., Schenck, R., & Pretorius, A. (2022). Buyback centres in Cape Town: The key integration point between formal and informal sectors in the waste economy of the Western Cape. GeoJournal, 87(3), 2051–2065. https://doi.org/10.1007/s10708-020-10351-9</li> 
+<li>DeRousseau M, Gully B, Taylor C, Apelian D, Wang Y (2017) Repurposing used electric car batteries: a review of options. JOM, 69(9), 1575-1582. https://doi.org/10.1007/s11837-017-2368-9</li>
 <br>
-<li>Sumter, D., Bakker, C., & Balkenende, R. (2018). The Role of Product Design in Creating Circular Business Models: A Case Study on the Lease and Refurbishment of Baby Strollers. Sustainability, 10(7), 2415. https://doi.org/10.3390/su10072415</li>
+<li>Diekmann J, Hanisch C, Froböse L, Schälicke G, Loellhoeffel T, Fölster AS, Kwade A (2016) Ecological Recycling of Lithium-Ion Batteries from Electric Vehicles with Focus on Mechanical Processes. Journal of The Electrochemical Society, 164(1), A6184. https://doi.org/10.1149/2.0271701jes</li>
 <br>
-<li>Regulation (EU) 2024/1781 of the European Parliament and of the Council of 13 June 2024 Establishing a Framework for the Setting of Ecodesign Requirements for Sustainable Products, Amending Directive (EU) 2020/1828 and Regulation (EU) 2023/1542 and Repealing Directive 2009/125/EC (Ecodesign for Sustainable Products Regulation) (2024).</li>
+<li>Fechtner H, Saes KH, Fechtner E, Braun, T, Schmülling, B (2016) Clarification of the Training Requirements for Working on Electric Vehicles. International Journal of Advanced Corporate Learning, 9(1). https://doi.org/10.3991/ijac.v9i1.5635</li>
 <br>
-<li>Jansen, M., Meisen, T., Plociennik, C., Berg, H., Pomp, A., & Windholz, W. (2023). Stop Guessing in the Dark: Identified Requirements for Digital Product Passport Systems. Systems, 11(3), 123. https://doi.org/10.3390/systems11030123</li>
+<li>Feng X, Sun J, Ouyang M, He X, Lu L, Han X, Fang M, Peng H (2014) Characterization of large format lithium ion battery exposed to extremely high temperature. Journal of Power Sources, 272, 457-467. https://doi.org/10.1016/j.jpowsour.2014.08.094</li>
 <br>
-<li>Gupta, S. M. (2007). Product Life Cycle Monitoring via Embedded Sensors. In Environment Conscious Manufacturing. Taylor & Francis Ltd.</li> 
+<li>Foster M, Isely P, Standridge CR, Hasan MM (2014) Feasibility assessment of remanufacturing, repurposing, and recycling of end of vehicle application lithium-ion batteries. Journal of Industrial Engineering and Management, 7(3), 698-715. https://doi.org/10.3926/jiem.939</li>
 <br>
-<li>Circularity Dataset Initiative, M. of the E. of L. (2023). Product Circularity Data Sheet (PCDS).</li> 
+<li>Gabbar HA, Othman AM, Abdussami MR (2021) Review of battery management systems (BMS) development and industrial standards. Technologies, 9(2), 28. https://doi.org/10.3390/technologies9020028</li>
 <br>
-<li>Li, T.-T., Wang, K., Sueyoshi, T., & Wang, D. D. (2021). ESG: Research Progress and Future Prospects. Sustainability, 13(21), 11663. https://doi.org/10.3390/su132111663</li>
+<li>Gaines L (2014) The future of automotive lithium-ion battery recycling: Charting a sustainable course. Sustainable Materials and Technologies, 1, 2-7. https://doi.org/10.1016/j.susmat.2014.10.001</li>
 <br>
-<li>Hapuwatte, B. M., Mathur, N., & Morris, K. C. (2023). Emissions Avoidance Quantification and Allocation Framework for Secondary Materials Marketplaces Supporting the Circular Economy. Volume 1: Additive Manufacturing; Advanced Materials Manufacturing; Biomanufacturing; Life Cycle Engineering, V001T04A004. https://doi.org/10.1115/MSEC2023-104125</li> 
+<li>Gaines L, Richa K, Spangenberger J (2018) Key issues for Li-ion battery recycling. MRS Energy & Sustainability, 5, E14. https://doi.org/10.1557/mre.2018.13</li>
 <br>
-<li>Charter, M. (Ed.). (2019). Designing for the circular economy. Routledge, Taylor & Francis Group.</li>
+<li>Gao W, Liu C, Cao H, Zheng X, Lin X, Wang H, Zhang Y, Sun Z (2018) Comprehensive evaluation on effective leaching of critical metals from spent lithium-ion batteries. Waste Management, 75, 477-485. https://doi.org/10.1016/j.wasman.2018.02.023</li>
 <br>
-<li>International Organization for Standardization. (2019). Environmentally conscious design (ECD)—Principles, requirements and guidance (IEC No. 62430:2019; Version 2).</li> 
+<li>Garole DJ, Hossain R, Garole VJ, Sahajwalla V, Nerkar J, Dubal DP (2020) Recycle, recover and repurpose strategy of spent Li-ion batteries and catalysts: Current status and future opportunities. Chemistry-Sustainability-Energy-Materials, 13(12), 3079-3100. https://doi.org/10.1002/cssc.201903213</li>
 <br>
-<li>British Standards Institution. (2019). Methods for providing information relating to material efficiency aspects of energy-related products (BS EN No. 45559:2019).</li>
+<li>Georgi-Maschler T, Friedrich B, Weyhe R, Heegn H, Rutz M (2012) Development of a recycling process for Li-ion batteries. Journal of power sources, 207, 173-182. https://doi.org/10.1016/j.jpowsour.2012.01.152</li>
 <br>
-<li>ASTM. (n.d.). New Guide for Principles for Circular Product Design (No. WK83603).</li> 
+<li>Granata G, Pagnanelli F, Moscardini E, Takacova Z, Havlik T, Toro L (2012) Simultaneous recycling of nickel metal hydride, lithium ion and primary lithium batteries: Accomplishment of European Guidelines by optimizing mechanical pre-treatment and solvent extraction operations. Journal of Power Sources, 212, 205-211. https://doi.org/10.1016/j.jpowsour.2012.04.016</li>
 <br>
-<li>International Organization for Standardization. (2024a). Circular economy—Guidance on the transition of business models and value networks (ISO No. 59010:2024).</li>
+<li>Graner M, Heieck F, Fill A, Birke P, Hammami W, Litty K (2022, November) Requirements for a process to remanufacture EV battery packs down to cell level and necessary design modifications. In Stuttgart Conference on Automotive Production (pp 376-386). Cham: Springer International Publishing. https://doi.org/10.1007/978-3-031-27933-1_35</li>
 <br>
-<li>International Organization for Standardization. (2024b). Circular economy—Measuring and assessing circularity performance (ISO No. 59020:2024).</li>
+<li>Groenewald J, Marco J, Higgins N, Barai A (2016) In-service EV battery life extension through feasible remanufacturing (No. 2016-01-1290). SAE Technical Paper. https://doi.org/10.4271/2016-01-1290</li>
 <br>
-<li>SB-54 Solid Waste: Reporting, Packaging, and Plastic Food Service Ware (2022).</li> 
+<li>Harper G, Sommerville R, Kendrick E, Driscoll L, Slater P, Stolkin R, Walton A, Christensen P, Heidrich O, Lambert S, Abbott A, Ryder K, Gaines L, Anderson P (2019) Recycling lithium-ion batteries from electric vehicles. Nature, 575(7781), 75-86. https://doi.org/10.1038/s41586-019-1682-5</li>
 <br>
-<li>HB22-1355 Producer Responsibility Program For Recycling (2022).</li> 
+<li>Holzer A, Windisch-Kern S, Ponak C, Raupenstrauch H (2021) A novel pyrometallurgical recycling process for lithium-ion batteries and its application to the recycling of LCO and LFP. Metals, 11(1), 149. https://doi.org/10.3390/met11010149</li>
 <br>
-<li>HP 1146 An Act To Support and Improve Municipal Recycling Programs and Save Taxpayer Money (2021).</li> 
+<li>Hong G, Park H, Gomez-Flores A, Kim H, Lee JM, Lee J (2024) Direct flotation separation of active materials from the black mass of lithium nickel cobalt manganese oxides-type spent lithium-ion batteries. Separation and Purification Technology, 336, 126327. https://doi.org/10.1016/j.seppur.2024.126327</li>
 <br>
-<li>HF 3577/SF 3561 Packaging Waste and Cost Reduction Act (Introduced).</li>
+<li>Hu X, Mousa E, Ye G (2025, February) Opportunities and Challenges in Lithium-Ion Battery Recycling: Emphasis on Pretreatment and Pyrometallurgical Processing. In TMS Annual Meeting & Exhibition (pp 23-31). Cham: Springer Nature Switzerland. https://doi.org/10.1007/978-3-031-80892-0_3</li>
 <br>
-<li>SB 582 Plastic Pollution and Recycling Modernization Act (2022).</li>  
+<li>Huang C, Lipatnikov AN, Lövström C, Smajovic N, Andersson L, Ismail A (2025) Experimental investigation of dust explosions with a focus on black mass in battery recycling. Journal of Loss Prevention in the Process Industries, 94, 105526. https://doi.org/10.1016/j.jlp.2024.105526</li>
 <br>
-<li>SB 222 Environment - Statewide Recycling Needs Assessment and Producer Responsibility for Packaging Materials (2023).</li> 
+<li>Jaguemont J, Bardé F (2023) A critical review of lithium-ion battery safety testing and standards. Applied Thermal Engineering, 231, 121014. https://doi.org/10.1016/j.applthermaleng.2023.121014</li>
 <br>
-<li>SI 2021 No. 745 The Ecodesign for Energy-Related Products and Energy Information Regulations 2021 (2021).</li>
+<li>Jena KK, AlFantazi A, Choi DS, Liao K, Mayyas A (2024) Recycling spent lithium ion batteries and separation of cathode active materials: structural stability, morphology regularity, and waste management. Industrial & Engineering Chemistry Research, 63(8), 3483-3490. https://doi.org/10.1021/acs.iecr.3c03673</li>
 <br>
-<li>SB S4104A Digital Fair Repair Act (2022).</li>
+<li>Jena KK, Choi DS (2024) Recycling of cathode active materials from spent lithium-ion batteries (LIBs): effective methodology for environmental remediation. Materials Chemistry and Physics, 311, 128532. https://doi.org/10.1016/j.matchemphys.2023.128532</li>
 <br>
-<li>HB23-1011 Consumer Right To Repair Agricultural Equipment (2023).</li>
+<li>Ji Y, Jafvert CT, Zyaykina NN, Zhao F (2022) Decomposition of PVDF to delaminate cathode materials from end-of-life lithium-ion battery cathodes. Journal of Cleaner Production, 367, 133112. https://doi.org/10.1016/j.jclepro.2022.133112</li>
 <br>
-<li>HB24-1121 Consumer Right to Repair Digital Electronic Equipment (2024).</li>
+<li>Kallitsis E, Korre A, Kelsall GH (2022) Life cycle assessment of recycling options for automotive Li-ion battery packs. Journal of cleaner production, 371, 133636. https://doi.org/10.1016/j.jclepro.2022.133636</li>
 <br>
-<li>SF 1598 Digital Fair Repair Act (2024).</li>
+<li>Kamath D, Moore S, Arsenault R, Anctil A (2023) A system dynamics model for end-of-life management of electric vehicle batteries in the US: Comparing the cost, carbon, and material requirements of remanufacturing and recycling. Resources, Conservation and Recycling, 196, 107061. https://doi.org/10.1016/j.resconrec.2023.107061</li>
 <br>
-<li>SB542 Relating to a Right to Repair Consumer Electronic Equipment (Introduced).</li>
+<li>Kehl D, Jennert T, Lienesch F, Kurrat M (2021) Electrical characterization of Li-ion battery modules for second-life applications. Batteries, 7(2), 32. https://doi.org/10.3390/batteries7020032</li>
 <br>
-<li>SB-244 Right to Repair Act (2023).</li> 
+<li>Khodadadmahmoudi G, Javdan Tabar K, Homayouni AH, Chehreh Chelgani S (2023) Recycling spent lithium batteries–an overview of pretreatment flowsheet development based on metallurgical factors. Environmental Technology Reviews, 12(1), 2248559. https://doi.org/10.1080/21622515.2023.2248559</li>
 <br>
-<li>H.R.5376 Inflation Reduction Act of 2022 (2022).</li>
+<li>Kuzuhara S, Ota M, Tsugita F, Kasuya R (2020) Recovering lithium from the cathode active material in lithium-ion batteries via thermal decomposition. Metals, 10(4), 433. https://doi.org/10.3390/met10040433</li>
 <br>
-<li>71.28(4) Vehicle Battery and Engine Research Tax Credits.</li> 
+<li>Kwon OS, Sohn IL (2020) Fundamental thermokinetic study of a sustainable lithium-ion battery pyrometallurgical recycling process. Resources, Conservation and Recycling, 158, 104809. https://doi.org/10.1016/j.resconrec.2020.104809</li>
 <br>
-<li>Kristensen, H. S., & Mosgaard, M. A. (2020). A review of micro level indicators for a circular economy – moving away from the three dimensions of sustainability? Journal of Cleaner Production, 243, 118531. https://doi.org/10.1016/j.jclepro.2019.118531</li>
+<li>Larouche F, Tedjar F, Amouzegar K, Houlachi G, Bouchard P, Demopoulos GP, Zaghib K (2020) Progress and status of hydrometallurgical and direct recycling of Li-ion batteries and beyond. Materials, 13(3), 801. https://doi.org/10.3390/ma13030801</li>
 <br>
-<li>Saidani, M., & Kim, H. (2021). Design for Product Circularity: Circular Economy Indicators With Tools Mapped Along the Engineering Design Process. Volume 5: 26th Design for Manufacturing and the Life Cycle Conference (DFMLC), V005T05A008. https://doi.org/10.1115/DETC2021-69629</li>
+<li>Lee C, Arby DS, Kim C, Lim J, Kwon K, Chung E (2025) Hydrometallurgical process of spent lithium-ion battery recycling Part. 1 Chemical leaching of valuable metals from cathode active materials: Review and case study. Hydrometallurgy, 106494. https://doi.org/10.1016/j.hydromet.2025.106494</li>
 <br>
-<li>Ko, J., Guedes, G. B., Badurdeen, F., Jawahir, I. S., Morris, K. C., Ferrero, V., Hapuwatte, B., Bradley, R., & Raihanian, A. (2024). A critical analysis of circular product attributes and limitations of product circularity assessment methods. Resources, Conservation & Recycling Advances, 23, 200219. https://doi.org/10.1016/j.rcradv.2024.200219</li>
+<li>Lei S, Sun W, Yang Y (2022) Solvent extraction for recycling of spent lithium-ion batteries. Journal of Hazardous Materials, 424, 127654. https://doi.org/10.1016/j.jhazmat.2021.127654</li>
 <br>
-<li>IDEO, & Ellen MacArthur Foundation. (2016). Circular Design Guide.</li>
+<li>Lelie M, Braun T, Knips M, Nordmann H, Ringbeck F, Zappen H, Sauer DU (2018) Battery management system hardware concepts: An overview. Applied Sciences, 8(4), 534. https://doi.org/10.3390/app8040534</li>
 <br>
-<li>Waste and Resources Action Programme (WRAP). (2023). Circular Design Toolkit for Fashion and Textiles.</li>
+<li>Linja-Aho V (2024) Assessing the Electrical Risks in Electric Vehicle Repair: Results for use in developing safe working practices and regulations. IEEE Industry Applications Magazine, 30(5), 32-41. https://doi.org/10.1109/MIAS.2024.3387142</li>
 <br>
-<li>ASOS, & UAL Centre for Sustainable Fashion. (2021). ASOS Circular Design Guidebook.</li>
+<li>Ma X, Meng Z, Bellonia MV, Spangenberger J, Harper G, Gratz E, Olivetti E, Arsenault R, Wang Y (2025) The evolution of lithium-ion battery recycling. Nature Reviews Clean Technology, 1(1), 75-94. https://doi.org/10.1038/s44359-024-00010-4</li>
 <br>
-<li>Circular Electronics Partnership. (2024). Circular Electronics Design Guide.</li>
+<li>Makuza B, Tian Q, Guo X, Chattopadhyay K, Yu D (2021) Pyrometallurgical options for recycling spent lithium-ion batteries: A comprehensive review. Journal of Power Sources, 491, 229622. https://doi.org/10.1016/j.jpowsour.2021.229622</li>
 <br>
-<li>Mestre, A., & Cooper, T. (2017). Circular Product Design. A Multiple Loops Life Cycle Design Approach for the Circular Economy. The Design Journal, 20(sup1), S1620–S1635. https://doi.org/10.1080/14606925.2017.1352686</li>
+<li>Makuza B, Yu D, Huang Z, Tian Q, Guo X (2021) Dry grinding-carbonated ultrasound-assisted water leaching of carbothermally reduced lithium-ion battery black mass towards enhanced selective extraction of lithium and recovery of high-value metals. Resources, Conservation and Recycling, 174, 105784. https://doi.org/10.1016/j.resconrec.2021.105784</li>
 <br>
-<li>International Organization for Standardization. (2012). Information technology—Modeling Languages Part 1: Syntax and Semantics for IDEF0 (ISO/IEC/IEEE Nos. 31320-1:2012).</li>
+<li>Maleki H, Al Hallaj S, Selman JR, Dinwiddie RB, Wang H (1999) Thermal properties of lithium‐ion battery and components. Journal of The Electrochemical Society, 146(3), 947. https://doi.org/10.1149/1.1391704</li>
 <br>
-<li>Funk, K. (2017, September 29). Task Analysis Using IDEF0 [Course (IE 545, Human Factors Engineering)].</li> 
+<li>Mantuano DP, Dorella G, Elias RCA, Mansur MB (2006) Analysis of a hydrometallurgical route to recover base metals from spent rechargeable batteries by liquid–liquid extraction with Cyanex 272. Journal of Power Sources, 159(2), 1510-1518. https://doi.org/10.1016/j.jpowsour.2005.12.056</li>
 <br>
-<li>Babbitt, C. W., Althaf, S., Cruz Rios, F., Bilec, M. M., & Graedel, T. E. (2021). The role of design in circular economy solutions for critical materials. One Earth, 4(3), 353–362. https://doi.org/10.1016/j.oneear.2021.02.014</li>
+<li>Marshall J, Gastol D, Sommerville R, Middleton B, Goodship V, Kendrick E (2020) Disassembly of Li ion cells—characterization and safety considerations of a recycling scheme. Metals, 10(6), 773. https://doi.org/10.3390/met10060773</li>
 <br>
-<li>Mathur, N., Last, N., & Morris, K. C. (2023). A process model representation of the end-of-life phase of a product in a circular economy to identify standards needs. Frontiers in Manufacturing Technology, 3, 988073. https://doi.org/10.3389/fmtec.2023.988073</li>
+<li>McLaughlin W, Adams TS (1999) Li reclamation process (U.S. Patent No. US5888463A). United States Patent and Trademark Office (as cited in Pinegar et al., (2019)).</li>
 <br>
-<li>Cui, J., & Zhang, L. (2008). Metallurgical recovery of metals from electronic waste: A review.  Journal of Hazardous Materials, 158(2-3), 228-256. https://doi.org/10.1016/j.jhazmat.2008.02.001</li>
+<li>Melin HE (2019) State-of-the-art in reuse and recycling of lithium-ion batteries - A research review. Circular Energy Storage, 1, 1-57. A report commissioned by The Swedish Energy Agency</li>
 <br>
-<li>Safiuddin, M., Salam, M. A., & Jumaat, M. Z. (2011). Utilization of palm oil fuel ash in concrete: a review. Journal of Civil Engineering and Management, 17(2), 234-247. https://doi.org/10.3846/13923730.2011.574450</li>
+<li>Meshram P, Pandey BD, Mankhand TR (2015) Hydrometallurgical processing of spent lithium ion batteries (LIBs) in the presence of a reducing agent with emphasis on kinetics of leaching. Chemical Engineering Journal, 281, 418-427. https://doi.org/10.1016/j.cej.2015.06.071</li>
 <br>
-<li>Jacobsen, N. B. (2006). Industrial Symbiosis in Kalundborg, Denmark: A Quantitative Assessment of Economic and Environmental Aspects. Journal of Industrial Ecology, 10(1-2), 239-255. https://doi.org/10.1162/108819806775545411</li>
+<li>Michelini E, Höschele P, Abbas SM, Ellersdorfer C, Moser J (2023) Assessment of health indicators to detect the aging state of commercial second-life lithium-ion battery cells through basic electrochemical cycling. Batteries, 9(11), 542. https://doi.org/10.3390/batteries9110542</li>
 <br>
-<li>Schumacher, K., Morris, K., Last, N., and Costello, A. (2023). Fostering a Circular Economy of Manufacturing Materials Workshop Report. ASTM International. https://doi.org/10.1520/amcoe-economy-of-manufacturing-materials.</li>
+<li>Montes T, Etxandi-Santolaya M, Eichman J, Ferreira VJ, Trilla L, Corchero C (2022) Procedure for Assessing the Suitability of Battery Second Life Applications After EV First Life. Batteries, 8(9), 122. https://doi.org/10.3390/batteries8090122</li>
+<br>
+<li>Mousa E, Hu X, Ånnhagen L, Ye G, Cornelio A, Fahimi A, Bontempi E, Frontera P, Badenhorst C, Santos AC, Moreira K, Guedes A, Valentim B (2022) Characterization and thermal treatment of the black mass from spent lithium-ion batteries. Sustainability, 15(1), 15. https://doi.org/10.3390/su15010015</li>
+<br>
+<li>Murphy L, Crawford C (2025) Data-driven classification of lithium-ion batteries for second-life applications. Journal of Energy Storage, 133, 117994. https://doi.org/10.1016/j.est.2025.117994</li>
+<br>
+<li>Neumann J, Petranikova M, Meeus M, Gamarra JD, Younesi R, Winter M, Nowak S (2022) Recycling of lithium-ion batteries—current state of the art, circular economy, and next generation recycling. Advanced Energy Materials, 12(17), 2102917. https://doi.org/10.1002/aenm.202102917</li>
+<br>
+<li>Nguyen TH, Lee MS (2018) A review on the separation of lithium ion from leach liquors of primary and secondary resources by solvent extraction with commercial extractants. Processes, 6(5), 55. https://doi.org/10.3390/pr6050055</li>
+<br>
+<li>Nguyen VNH, Lee MS (2020) Separation of Co (II), Cu (II), Ni (II) and Mn (II) from synthetic hydrochloric acid leaching solution of spent lithium ion batteries by solvent extraction. Physicochemical Problems of Mineral Processing, 56(4), 599-610. https://doi.org/10.37190/ppmp/122784</li>
+<br>
+<li>Pakostova E, Graves J, Latvyte E, Maddalena G, Horsfall L (2024). A novel closed-loop biotechnology for recovery of cobalt from a lithium-ion battery active cathode material. Microbiology, 170(7), 001475. https://doi.org/10.1099/mic.0.001475</li>
+<br>
+<li>Pan C, Shen Y (2023) Pyrometallurgical recycling of spent lithium-ion batteries from conventional roasting to synergistic pyrolysis with organic wastes. Journal of energy chemistry, 85, 547-561. https://doi.org/10.1016/j.jechem.2023.06.040</li>
+<br>
+<li>Park SJ, Song YW, Kang BS, Kim WJ, Choi YJ, Kim C, Hong YS (2023) Depth of discharge characteristics and control strategy to optimize electric vehicle battery life. Journal of Energy Storage, 59, 106477. https://doi.org/10.1016/j.est.2022.106477</li>
+<br>
+<li>Partinen J, Halli P, Wilson BP, Lundström M (2023) The impact of chlorides on NMC leaching in hydrometallurgical battery recycling. Minerals Engineering, 202, 108244. https://doi.org/10.1016/j.mineng.2023.108244</li>
+<br>
+<li>Peschel C, van Wickeren S, Preibisch Y, Naber V, Werner D, Frankenstein L, Horsthemke F, Peuker U, Winter M, Nowak S (2022) Comprehensive Characterization of Shredded Lithium‐Ion Battery Recycling Material. Chemistry–A European Journal, 28(22), e202200485. https://doi.org/10.1002/chem.202200485</li>
+<br>
+<li>Pinegar H, Smith YR (2019) End-of-life lithium-ion battery component mechanical liberation and separation. JOM, 71(12), 4447-4456. https://doi.org/10.1007/s11837-019-03828-7</li>
+<br>
+<li>Pinegar H, Smith YR (2019) Recycling of end-of-life lithium ion batteries, Part I: Commercial processes. Journal of Sustainable Metallurgy, 5(3), 402-416. https://doi.org/10.1007/s40831-019-00235-9</li>
+<br>
+<li>Pinegar H, Smith YR (2020) Mechanical Beneficiation of End-of-Life Lithium-Ion Battery Components. In Energy Technology 2020: Recycling, Carbon Dioxide Management, and Other Technologies (pp 259-267). Cham: Springer International Publishing. https://doi.org/10.1007/978-3-030-36830-2_25</li>
+<br>
+<li>Qing J, Wu X, Zeng L, Guan W, Cao Z, Li Q, Wang M, Zhang G, Wu S (2023) Novel approach to recycling of valuable metals from spent lithium-ion batteries using hydrometallurgy, focused on preferential extraction of lithium. Journal of Cleaner Production, 431, 139645. https://doi.org/10.1016/j.jclepro.2023.139645</li>
+<br>
+<li>Rahimi-Eichi H, Ojha U, Baronti F, Chow M-Y (2013) Battery Management System: An Overview of Its Application in the Smart Grid and Electric Vehicles. IEEE Industrial Electronics Magazine, 7(2):4-16. https://doi.org/10.1109/MIE.2013.2250351</li>
+<br>
+<li>Rahmawatie B, Sutopo W, Fahma F, Purwanto A, Nizam M, Louhenapessy BB, Mulyono AB (2017) Designing framework for standardization and testing requirements of battery management system for electric vehicle application. 2017 4th International Conference on Electric Vehicular Technology (ICEVT), pp 7-12. https://doi.org/10.1109/ICEVT.2017.8323525</li>
+<br>
+<li>Rajaeifar MA, Raugei M, Steubing B, Hartwell A, Anderson PA, Heidrich O (2021) Life cycle assessment of lithium-ion battery recycling using pyrometallurgical technologies. Journal of Industrial Ecology, 25(6), 1560-1571. https://doi.org/10.1111/jiec.13157</li>
+<br>
+<li>Ramoni MO, Zhang HC (2013) End-of-life (EOL) issues and options for electric vehicle batteries. Clean Technologies and Environmental Policy, 15(6), 881-891. https://doi.org/10.1007/s10098-013-0588-4</li>
+<br>
+<li>Rasheed M, Hassan R, Kamel M, Wang H, Zane R, Tong S, Smith K (2023) Active reconditioning of retired lithium-ion battery packs from electric vehicles for second-life applications. IEEE Journal of Emerging and Selected Topics in Power Electronics, 12(1), 388-404. https://doi.org/10.1109/JESTPE.2023.3325251</li>
+<br>
+<li>Rasheed M, Kamel M, Wang H, Zane R, Smith K (2020, November) Investigation of Active Life Balancing to Recondition Li-ion Battery Packs for 2nd Life. 2020 IEEE 21st Workshop on Control and Modeling for Power Electronics (COMPEL), pp 1–7. https://doi.org/10.1109/COMPEL49091.2020.9265808</li>
+<br>
+<li>Rehman S, Short M, Savage R, Cui X, Al-Greer M, Emandi B, Burn A (2024, August) A Review of the EoL EV Batteries Sorting and Disassembly Challenges. In 2024 29th International Conference on Automation and Computing, pp 1-6 IEEE. https://doi.org/10.1109/ICAC61394.2024.10718731</li>
+<br>
+<li>Reinhart L, Vrucak D, Woeste R, Lucas H, Rombach E, Friedrich B, Letmathe P (2023) Pyrometallurgical recycling of different lithium-ion battery cell systems: Economic and technical analysis. Journal of Cleaner Production, 416, 137834. https://doi.org/10.1016/j.jclepro.2023.137834</li>
+<br>
+<li>Reslan M, Last N, Mathur N, Morris KC, Ferrero V (2022) Circular economy: a product life cycle perspective on engineering and manufacturing practices. Procedia CIRP, 105, 851-858. https://doi.org/10.1016/j.jclepro.2023.139017</li>
+<br>
+<li>Rettenmeier M, Möller M, Sauer A (2024) Disassembly technologies of end-of-life automotive battery packs as the cornerstone for a circular battery value chain: A process-oriented analysis. Resources, Conservation and Recycling, 209, 107786. https://doi.org/10.1016/j.resconrec.2024.107786</li>
+<br>
+<li>Rinne T, Araya-Gómez N, Serna-Guerrero R (2023) A study on the effect of particle size on li-ion battery recycling via flotation and perspectives on selective flocculation. Batteries, 9(2), 68. https://doi.org/10.3390/batteries9020068</li>
+<br>
+<li>Rinne T, Klemettinen A, Klemettinen L, Ruismäki R, O’Brien H, Jokilaakso A, Serna-Guerrero R (2021) Recovering value from end-of-life batteries by integrating froth flotation and pyrometallurgical copper-slag cleaning. Metals, 12(1), 15. https://doi.org/10.3390/met12010015</li>
+<br>
+<li>Rufino Júnior CA, Riva Sanseverino E, Gallo P, Koch D, Diel S, Walter G, Trilla L, Ferreira VJ, Pérez GB, Kotak Y, Eichman J, Schweiger HG, Zanin H (2024) Towards to battery digital passport: reviewing regulations and standards for second-life batteries. Batteries, 10(4), 115. https://doi.org/10.3390/batteries10040115</li>
+<br>
+<li>Saloojee F, Lloyd J (2015) Lithium battery recycling process. Department of Environmental Affairs Development Bank of South Africa (Project No. DB-074 (RW1/1016)), 27(0) (as cited in Pinegar et al. (2019))</li>
+<br>
+<li>Sonoc A, Jeswiet J, Ghahreman A (2021) Hydrometallurgical recycling of lithium-ion battery electrodes (U.S. Patent No. US20230187720A1) United States Patent and Trademark Office.</li>
+<br>
+<li>Standridge CR, Hasan MM (2015) Post-vehicle-application lithium-ion battery remanufacturing, repurposing and recycling capacity: Modeling and analysis. Journal of Industrial Engineering and Management, 8(3), 823-839. https://doi.org/10.3926/jiem.1418</li>
+<br>
+<li>Stinn C, Allanore A (2021, February) Selective sulfidation and electrowinning of nickel and cobalt for lithium ion battery recycling. In Ni-Co 2021: The 5th International Symposium on Nickel and Cobalt (pp 99-110). Cham: Springer International Publishing. https://doi.org/10.1007/978-3-030-65647-8_7</li>
+<br>
+<li>Svensson D, Särnevång A (2024) Inspection and Evaluation Method to Repurpose Used Batteries. http://hdl.handle.net/20.500.12380/308820</li>
+<br>
+<li>Swain B, Jeong J, Lee JC, Lee GH, Sohn JS (2007) Hydrometallurgical process for recovery of cobalt from waste cathodic active material generated during manufacturing of lithium ion batteries. Journal of Power Sources, 167(2), 536-544. https://doi.org/10.1016/j.jpowsour.2007.02.046</li>
+<br>
+<li>Tang YC, Wang JZ, Shen YH (2023) Separation of valuable metals in the recycling of lithium batteries via solvent extraction. Minerals, 13(2), 285. https://doi.org/10.3390/min13020285</li>
+<br>
+<li>Tedjar F, Foudraz JC (2013) Method for the mixed recycling of lithium-based anode batteries and cells (Canadian Patent No. CA 2559928 C). Canadian Intellectual Property Office (as cited in Pinegar et al., (2019)).</li>
+<br>
+<li>Vanderbruggen A, Salces A, Ferreira A, Rudolph M, Serna-Guerrero R (2022) Improving separation efficiency in end-of-life lithium-ion batteries flotation using attrition pre-treatment. Minerals, 12(1), 72. https://doi.org/10.3390/min12010072</li>
+<br>
+<li>Vieceli N, Casasola R, Lombardo G, Ebin B, Petranikova M (2021) Hydrometallurgical recycling of EV lithium-ion batteries: Effects of incineration on the leaching efficiency of metals using sulfuric acid. Waste Management, 125, 192-203. https://doi.org/10.1016/j.wasman.2021.02.039</li>
+<br>
+<li>Vieceli N, Nogueira CA, Guimarães C, Pereira MF, Durão FO, Margarido F (2018) Hydrometallurgical recycling of lithium-ion batteries by reductive leaching with sodium metabisulphite. Waste Management, 71, 350-361. https://doi.org/10.1016/j.wasman.2017.09.032</li>
+<br>
+<li>Vieceli N, Vonderstein C, Swiontekc T, Stopić S, Dertmann C, Sojka R, Reinhardt N, Ekberg C, Friedrich B, Petranikova M (2023) Recycling of Li-ion batteries from industrial processing: Upscaled hydrometallurgical treatment and recovery of high purity manganese by solvent extraction. Solvent Extraction and Ion Exchange, 41(2), 205-220. https://doi.org/10.1080/07366299.2023.2165405</li>
+<br>
+<li>Wang H, Liu C, Qu G, Zhou S, Li B, Wei Y (2023) Study on pyrolysis pretreatment characteristics of spent lithium-ion batteries. Separations, 10(4), 259. https://doi.org/10.3390/separations10040259</li>
+<br>
+<li>Werner DM, Mütze T, Peuker UA (2022) Influence of cell opening methods on electrolyte removal during processing in lithium-ion battery recycling. Metals, 12(4), 663. https://doi.org/10.3390/met12040663</li>
+<br>
+<li>Wesselborg T, Virolainen S, Sainio T (2021) Recovery of lithium from leach solutions of battery waste using direct solvent extraction with TBP and FeCl3. Hydrometallurgy, 202, 105593. https://doi.org/10.1016/j.hydromet.2021.105593</li>
+<br>
+<li>Wilke C, Kaas A, Peuker UA (2023) Influence of the cell type on the physical processes of the mechanical recycling of automotive lithium-ion batteries. Metals, 13(11), 1901. https://doi.org/10.3390/met13111901</li>
+<br>
+<li>Wilke C, Werner DM, Kaas A, Peuker UA (2023) Influence of the crusher settings and a thermal pre-treatment on the properties of the fine fraction (black mass) from mechanical lithium-ion battery recycling. Batteries, 9(10), 514. https://doi.org/10.3390/batteries9100514</li>
+<br>
+<li>Wu MS, Chiang PCJ, Lin JC, Jan YS (2004) Correlation between electrochemical characteristics and thermal stability of advanced lithium-ion batteries in abuse tests—short-circuit tests. Electrochimica acta, 49(11), 1803-1812. https://doi.org/10.1016/j.electacta.2003.12.012</li>
+<br>
+<li>Wuschke L, Jäckel HG, Leißner T, Peuker UA (2019) Crushing of large Li-ion battery cells. Waste Management, 85, 317-326. https://doi.org/10.1016/j.wasman.2018.12.042</li>
+<br>
+<li>Xing P, Wang C, Wang L, Ma B, Chen Y (2019) Hydrometallurgical recovery of lead from spent lead-acid battery paste via leaching and electrowinning in chloride solution. Hydrometallurgy, 189, 105134. https://doi.org/10.1016/j.hydromet.2019.105134</li>
+<br>
+<li>Zang Y, Wang Y (2022, September) Robotic disassembly of electric vehicle batteries: an overview. 2022 27th International Conference on Automation and Computing (ICAC), pp 1-6. https://doi.org/10.1109/ICAC55051.2022.9911109</li>
+<br>
+<li>Zenger T, Krebs A (2011) Method of and apparatus for dismantling and storage of objects comprising alkali metals, such as alkali metal containing batteries (Canadian Patent No. CA 2418527 C). Canadian Intellectual Property Office.</li>
+<br>
+<li>Zhan R, Yang Z, Bloom I, Pan L (2020) Significance of a solid electrolyte interphase on separation of anode and cathode materials from spent Li-ion batteries by froth flotation. ACS Sustainable Chemistry & Engineering, 9(1), 531-540. https://doi.org/10.1021/acssuschemeng.0c07965</li>
+<br>
+<li>Zhang J (2022) Pyrometallurgy-based applications in spent lithium-ion battery recycling. In Nano Technology for Battery Recycling, Remanufacturing, and Reusing (pp 171-182). Elsevier. https://doi.org/10.1016/B978-0-323-91134-4.00002-9</li>
+<br>
+<li>Zhang P, Yokoyama T, Itabashi O, Suzuki TM, Inoue K (1998) Hydrometallurgical process for recovery of metal values from spent lithium-ion secondary batteries. Hydrometallurgy, 47(2-3), 259-271. https://doi.org/10.1016/S0304-386X(97)00050-9</li>
+<br>
+<li>Zhao J, Feng X, Tran MK, Fowler M, Ouyang M, Burke AF (2024) Battery safety: Fault diagnosis from laboratory to real world. J. Power Sources, 598(234111), 10-1016. https://doi.org/10.1016/j.jpowsour.2024.234111</li>
+<br>
+<li>Zhou M, Li B, Li J, Xu Z (2021) Pyrometallurgical technology in the recycling of a spent lithium ion battery: evolution and the challenge. ACS ES&T Engineering, 1(10), 1369-1382. https://doi.org/10.1021/acsestengg.1c00067</li>
+<br>
+<li>Zhu J, Mathews I, Ren D, Li W, Cogswell D, Xing B, Sedlatschek T, Kantareddy SNR, Yi M, Gao T, Xia Y, Zhou Q, Wierzbicki T, Bazant MZ (2021) End-of-life or second-life options for retired electric vehicle batteries. Cell Reports Physical Science, 2(8). https://doi.org/10.1016/j.xcrp.2021.100537</li>
 </ol>

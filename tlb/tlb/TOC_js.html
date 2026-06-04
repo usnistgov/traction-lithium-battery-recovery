@@ -1,0 +1,498 @@
+<HTML>
+   <HEAD>
+      <STYLE>
+         SPAN {cursor: hand ; font-size: 8pt; font-family:Verdana,Arial,Helvetica;}
+         .bright {color: red ; font-size: 8pt; font-family:Verdana,Arial,Helvetica;}
+         .dark {color: black ; font-size: 8pt; font-family:Verdana,Arial,Helvetica;}
+      </STYLE>
+ <SCRIPT LANGUAGE="JScript">
+    var curLevel = 0;
+    var prevElement = null;
+    var prevLevel;
+    var prevID;
+    var builtHTML = "";
+ function MakeTree() {
+    var coll = document.all;
+    var level;
+    var id;
+    var tagBegin;
+    for (i=document.body.sourceIndex+1; i<coll.length; i++) {
+       switch (coll[i].tagName.substring(0,3)) {
+          case "LVL":        
+             level = parseInt( coll[i].tagName.charAt(3) + coll[i].tagName.charAt(4) );
+             break;
+          default:
+             level = -1;
+       }
+       if (level!=-1) {
+          id = i;
+          addElem(coll[i], level, id);
+       }
+    }
+    addElem(prevElement,0, prevID);
+    divWrap();
+    //   document.all.Debug.outerText = MyTree.innerHTML;
+ }
+ function addElem(el, level, id) {
+    if (prevElement == null)
+    {
+       prevElement = el;
+       prevLevel = level;
+       prevID = id;
+       return;
+    }
+    var s = "&nbsp;";
+    var s1 = "&nbsp;&nbsp;";
+    for (var j=0; j<prevLevel; j++)
+       s = s + s1;
+    
+    if (level > curLevel)
+    {
+       //alert(prevElement.outerHTML);
+       builtHTML += "<SPAN STYLE='cursor:hand' CLASS='dark'  IURL='" 
+                 + prevElement.getAttribute('IURL') 
+                 + "' ";
+
+       if (prevElement.getAttribute('IURL') != "")
+         builtHTML += "FLASHER"; 
+
+       builtHTML += " LEVEL='" 
+                 + curLevel
+                 + "' IS_POOL='"
+                 + prevElement.getAttribute('IS_POOL')
+                 + "' >"
+                 + s; 
+
+       
+       if( (curLevel == 0) || (prevElement.getAttribute('IS_POOL')=="1") )
+       {
+         builtHTML += "<IMG SRC='expand.gif' ID='OUT"; 
+       }
+       else if( curLevel == 1 )
+       {
+         builtHTML += "<IMG SRC='diagram+.gif' ID='OUT";
+       }
+       else
+       {
+         builtHTML += "<IMG SRC='activity+.gif' ID='OUT";
+       }
+       builtHTML += prevID.toString() 
+                 + "' CLASS='collapsible' "
+                 + " LEVEL='"
+                 + curLevel
+                 + "' IS_POOL='"
+                 + prevElement.getAttribute('IS_POOL')  
+                 + "'> &nbsp;&nbsp;" 
+                 + prevElement.getAttribute('ITEXT') 
+                 + "<BR></SPAN>" 
+                 + "<DIV ID='OUT" 
+                 + prevID.toString() 
+                 + "D' STYLE='display:none'  >"; 
+       curLevel = level;
+    }
+    else
+    {
+       builtHTML += "<SPAN STYLE='cursor:hand'  CLASS='dark' IURL='" 
+                 + prevElement.getAttribute('IURL'); 
+
+       if ( prevElement.getAttribute('IURL') != "" )
+         builtHTML += "' FLASHER"; 
+  
+       builtHTML += " LEVEL='" 
+                 + curLevel
+                 + "' >"
+                 + s; 
+       if( (curLevel == 0) || (prevElement.getAttribute('IS_POOL')=="1") )
+       {
+         builtHTML += "<IMG SRC='leaf.gif' "; 
+       }
+       else if( curLevel == 1 )
+       {
+         builtHTML += "<IMG SRC='diagram.gif' ";
+       }
+       else
+       {
+         builtHTML += "<IMG SRC='activity.gif' ";
+       }
+       builtHTML += " LEVEL='"
+                 + curLevel
+                 + "'>&nbsp;" 
+                 + prevElement.getAttribute('ITEXT') 
+                 + "<BR></SPAN>";
+       if (level < curLevel)
+       {
+          for (var tplev = level; tplev < curLevel; tplev++)
+             builtHTML += "</DIV>";
+          curLevel = level;
+       }
+    }   
+  
+    prevElement = el;
+    prevLevel = level;
+    prevID = id;
+ }
+
+ function divWrap() {
+    while (curLevel > 0)
+    {
+       builtHTML +=      "</DIV>";
+       curLevel--;
+    }
+    document.all.MyTree.innerHTML=builtHTML;
+ }
+
+ function clickHandler(frametype) {
+    var colId, colElem ;
+    var tpURL;
+    gifElem = window.event.srcElement;
+    if (gifElem.className == "collapsible") {
+ 
+       colId = gifElem.id + "D";
+       colElem = document.all(colId);
+       if (colElem.style.display == "none") {
+          colElem.style.display = "" ;
+          if( (gifElem.getAttribute("LEVEL") == "0") || (gifElem.getAttribute('IS_POOL')=="1") )
+          {
+            gifElem.src = "fixed.gif" ;
+            
+          }
+          else if( gifElem.getAttribute("LEVEL") == "1" )
+          {
+            gifElem.src = "diagram.gif" ;
+          }
+          else
+          {
+            gifElem.src = "activity.gif" ;
+          }
+       } else {
+          colElem.style.display = "none" ;
+          if( (gifElem.getAttribute("LEVEL") == "0") || (gifElem.getAttribute('IS_POOL')=="1") )
+          {
+            gifElem.src = "expand.gif" ;
+          }
+          else if( gifElem.getAttribute("LEVEL") == "1" )
+          {
+            gifElem.src = "diagram+.gif" ;
+          }
+          else
+          {
+            gifElem.src = "activity+.gif" ;
+          }
+       }
+    }
+    if (gifElem.className == "bright")
+    {
+       if(frametype == 3)
+       {  
+         with (parent.top.document.all)
+         {
+          if(gifElem.getAttribute("IURL") != "")
+            top.location=gifElem.getAttribute("IURL");
+         }
+       }
+       else
+       {
+         with (parent.frames[1].document.all)
+         {
+          if(gifElem.getAttribute("IURL") != "")
+            top.Right.location=gifElem.getAttribute("IURL");
+	    top.Down.location = "Blank.htm";		//load blank in lower frame, Kanika 02/07/05
+         }
+       }
+    }
+ }
+ function MakeBright() {
+    el = event.srcElement ;
+    if (el.getAttribute("FLASHER") != null) {
+       el.className = "bright" ;
+    }
+ }
+ 
+ function MakeDark() {
+    el = event.srcElement ;
+    if (el.getAttribute("FLASHER") != null) {
+       el.className = "dark";
+    }
+ }
+</SCRIPT><TITLE></TITLE>
+</HEAD>
+
+<BODY  ONLOAD="MakeTree()">
+<H1></H1>
+<A HREF=summary.html>Repository Summary</A><br><br>
+<NOBR><A HREF=TOC_Hier.html>Expanded Tree</A></NOBR><br>
+<NOBR><A HREF=index.html>Collapsed Tree</A></NOBR><br><br>
+<LVL0  ITEXT="Diagrams" IURL="" ITARGET=></LVL0>
+<LVL1  ITEXT="Treat Traction Lithium Batteries at End-of-Life" IURL="dgmTreat%5FTraction%5FLithium%5FBatteries%5Fat%5FEnd%2Dof%2DLife23.html" IÐÞ></LVL1>
+<LVL2  ITEXT="Treat Batteries at End-of-Life" IURL="actuseTreat%5FBatteries%5Fat%5FEnd%2Dof%2DLife25.html" I Ú></LVL2>
+<LVL3  ITEXT="Treat Batteries at End-of-Life" IURL="dgmTreat%5FBatteries%5Fat%5FEnd%2Dof%2DLife68.html" IÚ></LVL3>
+<LVL4  ITEXT="Collect End-of-Life Batteries/Scrap" IURL="actuseCollect%5FEnd%2Dof%2DLife%5FBatteriesSLASHScrap89.html" I€Ù></LVL4>
+<LVL4  ITEXT="Test and Sort Batteries" IURL="actuseTest%5Fand%5FSort%5FBatteries93.html" I€Ù></LVL4>
+<LVL4  ITEXT="Recover Materials/Devices" IURL="actuseRecover%5FMaterialsSLASHDevices98.html" I€Ù></LVL4>
+<LVL5  ITEXT="Recover Materials/Devices" IURL="dgmRecover%5FMaterialsSLASHDevices144.html" IðØ></LVL5>
+<LVL6  ITEXT="Repurpose" IURL="actuseRepurpose165.html" I`Ø></LVL6>
+<LVL7  ITEXT="Repurpose" IURL="dgmRepurpose991.html" IÐ×></LVL7>
+<LVL8  ITEXT="Discharge Battery for Repurposing" IURL="actuseDischarge%5FBattery%5Ffor%5FRepurposing996.html" I@×></LVL8>
+<LVL8  ITEXT="Assess Functionality for Repurposing" IURL="actuseAssess%5FFunctionality%5Ffor%5FRepurposing1268.html" I@×></LVL8>
+<LVL8  ITEXT="Repair Battery" IURL="actuseRepair%5FBattery1306.html" I@×></LVL8>
+<LVL9  ITEXT="Repair Battery" IURL="dgmRepair%5FBattery1309.html" I°Ö></LVL9>
+<LVL10  ITEXT="Disassemble Battery for Repurposing" IURL="actuseDisassemble%5FBattery%5Ffor%5FRepurposing1311.html" I Ö></LVL10>
+<LVL10  ITEXT="Replace or Repair Damaged Components for Repurposing" IURL="actuseReplace%5For%5FRepair%5FDamaged%5FComponents%5Ffor%5FRepurposing1315.html" I Ö></LVL10>
+<LVL10  ITEXT="Recondition Battery for Repurposing" IURL="actuseRecondition%5FBattery%5Ffor%5FRepurposing1319.html" I Ö></LVL10>
+<LVL10  ITEXT="Reassemble Battery for Repurposing" IURL="actuseReassemble%5FBattery%5Ffor%5FRepurposing1323.html" I Ö></LVL10>
+<LVL8  ITEXT="Test Battery with Battery Management System" IURL="actuseTest%5FBattery%5Fwith%5FBattery%5FManagement%5FSystem1339.html" I@×></LVL8>
+<LVL9  ITEXT="Test Battery with Battery Management System" IURL="dgmTest%5FBattery%5Fwith%5FBattery%5FManagement%5FSystem1342.html" I°Ö></LVL9>
+<LVL10  ITEXT="Test Thermal Behavior" IURL="actuseTest%5FThermal%5FBehavior1345.html" I Ö></LVL10>
+<LVL10  ITEXT="Test Battery Management System" IURL="actuseTest%5FBattery%5FManagement%5FSystem1353.html" I Ö></LVL10>
+<LVL10  ITEXT="Evaluate Safety and Compliance" IURL="actuseEvaluate%5FSafety%5Fand%5FCompliance1360.html" I Ö></LVL10>
+<LVL8  ITEXT="Reconfigure Battery" IURL="actuseReconfigure%5FBattery1366.html" I@×></LVL8>
+<LVL8  ITEXT="Test/Certify Repurposed Battery" IURL="actuseTestSLASHCertify%5FRepurposed%5FBattery1284.html" I@×></LVL8>
+<LVL6  ITEXT="Remanufacture" IURL="actuseRemanufacture169.html" I`Ø></LVL6>
+<LVL7  ITEXT="Remanufacture" IURL="dgmRemanufacture206.html" IÐ×></LVL7>
+<LVL8  ITEXT="Prepare Battery for Remanufacturing" IURL="actusePrepare%5FBattery%5Ffor%5FRemanufacturing224.html" I@×></LVL8>
+<LVL9  ITEXT="Prepare Battery for Remanufacturing" IURL="dgmPrepare%5FBattery%5Ffor%5FRemanufacturing243.html" I°Ö></LVL9>
+<LVL10  ITEXT="Discharge Battery for Remanufacturing" IURL="actuseDischarge%5FBattery%5Ffor%5FRemanufacturing250.html" I Ö></LVL10>
+<LVL10  ITEXT="Assess Battery for Remanufacturing" IURL="actuseAssess%5FBattery%5Ffor%5FRemanufacturing254.html" I Ö></LVL10>
+<LVL10  ITEXT="Disassemble Battery for Remanufacturing" IURL="actuseDisassemble%5FBattery%5Ffor%5FRemanufacturing258.html" I Ö></LVL10>
+<LVL8  ITEXT="Remanufacture Battery" IURL="actuseRemanufacture%5FBattery228.html" I@×></LVL8>
+<LVL9  ITEXT="Remanufacture Battery" IURL="dgmRemanufacture%5FBattery265.html" I°Ö></LVL9>
+<LVL10  ITEXT="Replace or Repair Damaged Components for Remanufacturing" IURL="actuseReplace%5For%5FRepair%5FDamaged%5FComponents%5Ffor%5FRemanufacturing282.html" I Ö></LVL10>
+<LVL10  ITEXT="Recondition Battery for Remanufacturing" IURL="actuseRecondition%5FBattery%5Ffor%5FRemanufacturing286.html" I Ö></LVL10>
+<LVL10  ITEXT="Test for Functionality" IURL="actuseTest%5Ffor%5FFunctionality705.html" I Ö></LVL10>
+<LVL10  ITEXT="Reassemble Battery System" IURL="actuseReassemble%5FBattery%5FSystem715.html" I Ö></LVL10>
+<LVL8  ITEXT="Install Battery" IURL="actuseInstall%5FBattery232.html" I@×></LVL8>
+<LVL9  ITEXT="Install Battery" IURL="dgmInstall%5FBattery718.html" I°Ö></LVL9>
+<LVL10  ITEXT="Join to Frame" IURL="actuseJoin%5Fto%5FFrame738.html" I Ö></LVL10>
+<LVL10  ITEXT="Connect to Software Interface" IURL="actuseConnect%5Fto%5FSoftware%5FInterface742.html" I Ö></LVL10>
+<LVL10  ITEXT="Recondition Battery During Installation" IURL="actuseRecondition%5FBattery%5FDuring%5FInstallation746.html" I Ö></LVL10>
+<LVL10  ITEXT="Reconfigure Battery for Traction Battery Application" IURL="actuseReconfigure%5FBattery%5Ffor%5FTraction%5FBattery%5FApplication750.html" I Ö></LVL10>
+<LVL10  ITEXT="Test/Certify Remanufactured Battery" IURL="actuseTestSLASHCertify%5FRemanufactured%5FBattery754.html" I Ö></LVL10>
+<LVL6  ITEXT="Recycle" IURL="actuseRecycle173.html" I`Ø></LVL6>
+<LVL7  ITEXT="Recycle" IURL="dgmRecycle824.html" IÐ×></LVL7>
+<LVL8  ITEXT="Pretreat Battery" IURL="actusePretreat%5FBattery883.html" I@×></LVL8>
+<LVL9  ITEXT="Pretreat Battery" IURL="dgmPretreat%5FBattery944.html" I°Ö></LVL9>
+<LVL10  ITEXT="Discharge Battery for Recycling" IURL="actuseDischarge%5FBattery%5Ffor%5FRecycling980.html" I Ö></LVL10>
+<LVL10  ITEXT="Disassemble Battery for Recycling" IURL="actuseDisassemble%5FBattery%5Ffor%5FRecycling984.html" I Ö></LVL10>
+<LVL10  ITEXT="Mechanically/Chemically Pretreat Material" IURL="actuseMechanicallySLASHChemically%5FPretreat%5FMaterial1000.html" I Ö></LVL10>
+<LVL11  ITEXT="Mechanically/Chemically Pretreat Material" IURL="dgmMechanicallySLASHChemically%5FPretreat%5FMaterial1016.html" IÕ></LVL11>
+<LVL12  ITEXT="Shred" IURL="actuseShred1048.html" I></LVL12>
+<LVL12  ITEXT="Calcine" IURL="actuseCalcine1052.html" I></LVL12>
+<LVL12  ITEXT="Reduce Size" IURL="actuseReduce%5FSize1057.html" I></LVL12>
+<LVL12  ITEXT="Separate" IURL="actuseSeparate1061.html" I></LVL12>
+<LVL12  ITEXT="Treat Gas from Mechanical Pretreat" IURL="actuseTreat%5FGas%5Ffrom%5FMechanical%5FPretreat1065.html" I></LVL12>
+<LVL8  ITEXT="Pyrometallurgy" IURL="actusePyrometallurgy887.html" I@×></LVL8>
+<LVL9  ITEXT="Pyrometallurgy" IURL="dgmPyrometallurgy1077.html" I°Ö></LVL9>
+<LVL10  ITEXT="Heat Pretreat, Pyrometallurgy" IURL="actuseHeat%5FPretreat,%5FPyrometallurgy1115.html" I Ö></LVL10>
+<LVL10  ITEXT="Pyrolysis/Smelting" IURL="actusePyrolysisSLASHSmelting1119.html" I Ö></LVL10>
+<LVL10  ITEXT="Treat Gas for Pyrometallurgy" IURL="actuseTreat%5FGas%5Ffor%5FPyrometallurgy1123.html" I Ö></LVL10>
+<LVL11  ITEXT="Treat Gas for Pyrometallurgy" IURL="dgmTreat%5FGas%5Ffor%5FPyrometallurgy1162.html" IÕ></LVL11>
+<LVL12  ITEXT="Filter Gas" IURL="actuseFilter%5FGas1168.html" I></LVL12>
+<LVL12  ITEXT="Leach for Pyrometallurgy Gas Treatment" IURL="actuseLeach%5Ffor%5FPyrometallurgy%5FGas%5FTreatment1172.html" I></LVL12>
+<LVL12  ITEXT="Precipitate for Pyrometallurgy Gas Treatment" IURL="actusePrecipitate%5Ffor%5FPyrometallurgy%5FGas%5FTreatment1176.html" I></LVL12>
+<LVL10  ITEXT="Leach, Pyrometallurgy" IURL="actuseLeach,%5FPyrometallurgy1127.html" I Ö></LVL10>
+<LVL10  ITEXT="Oxidize, Pyrometallurgy" IURL="actuseOxidize,%5FPyrometallurgy1131.html" I Ö></LVL10>
+<LVL10  ITEXT="Sinter/Screen, Pyrometallurgy" IURL="actuseSinterSLASHScreen,%5FPyrometallurgy1133.html" I Ö></LVL10>
+<LVL8  ITEXT="Hydrometallurgy" IURL="actuseHydrometallurgy891.html" I@×></LVL8>
+<LVL9  ITEXT="Hydrometallurgy" IURL="dgmHydrometallurgy1184.html" I°Ö></LVL9>
+<LVL10  ITEXT="Leach, Hydrometallurgy" IURL="actuseLeach,%5FHydrometallurgy1224.html" I Ö></LVL10>
+<LVL10  ITEXT="Solvent Extract" IURL="actuseSolvent%5FExtract1228.html" I Ö></LVL10>
+<LVL10  ITEXT="Scrub" IURL="actuseScrub1232.html" I Ö></LVL10>
+<LVL10  ITEXT="Strip" IURL="actuseStrip1236.html" I Ö></LVL10>
+<LVL10  ITEXT="Precipitate/Electrowinning" IURL="actusePrecipitateSLASHElectrowinning1240.html" I Ö></LVL10>
+<LVL0  ITEXT=Pool ItemsIURL="" ITARGET=></LVL0>
+<LVL1  ITEXT="Activity Pool" IS_POOL="1" IURL=""></LVL1>
+<LVL2 ITEXT="Assess Battery for Remanufacturing" IURL="actAssess%5FBattery%5Ffor%5FRemanufacturing253.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Assess Functionality for Repurposing" IURL="actAssess%5FFunctionality%5Ffor%5FRepurposing1267.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Calcine" IURL="actCalcine1051.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Collect End-of-Life Batteries/Scrap" IURL="actCollect%5FEnd%2Dof%2DLife%5FBatteriesSLASHScrap88.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Connect to Software Interface" IURL="actConnect%5Fto%5FSoftware%5FInterface741.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Disassemble battery for reconfiguring" IURL="actDisassemble%5Fbattery%5Ffor%5Freconfiguring1371.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Disassemble Battery for Recycling" IURL="actDisassemble%5FBattery%5Ffor%5FRecycling983.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Disassemble Battery for Remanufacturing" IURL="actDisassemble%5FBattery%5Ffor%5FRemanufacturing257.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Disassemble Battery for Repurposing" IURL="actDisassemble%5FBattery%5Ffor%5FRepurposing1310.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Discharge Battery for Recycling" IURL="actDischarge%5FBattery%5Ffor%5FRecycling979.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Discharge Battery for Remanufacturing" IURL="actDischarge%5FBattery%5Ffor%5FRemanufacturing249.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Discharge Battery for Repurposing" IURL="actDischarge%5FBattery%5Ffor%5FRepurposing995.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Evaluate Safety and Compliance" IURL="actEvaluate%5FSafety%5Fand%5FCompliance1279.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Filter Gas" IURL="actFilter%5FGas1167.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Heat Pretreat, Pyrometallurgy" IURL="actHeat%5FPretreat,%5FPyrometallurgy1114.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Hydrometallurgy" IURL="actHydrometallurgy890.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Install Battery" IURL="actInstall%5FBattery231.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Join to Frame" IURL="actJoin%5Fto%5FFrame737.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Leach for Pyrometallurgy Gas Treatment" IURL="actLeach%5Ffor%5FPyrometallurgy%5FGas%5FTreatment1171.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Leach, Hydrometallurgy" IURL="actLeach,%5FHydrometallurgy1223.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Leach, Pyrometallurgy" IURL="actLeach,%5FPyrometallurgy1126.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Mechanically/Chemically Pretreat Material" IURL="actMechanicallySLASHChemically%5FPretreat%5FMaterial999.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Oxidize, Pyrometallurgy" IURL="actOxidize,%5FPyrometallurgy1130.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Precipitate for Pyrometallurgy Gas Treatment" IURL="actPrecipitate%5Ffor%5FPyrometallurgy%5FGas%5FTreatment1175.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Precipitate/Electrowinning" IURL="actPrecipitateSLASHElectrowinning1239.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Prepare Battery for Remanufacturing" IURL="actPrepare%5FBattery%5Ffor%5FRemanufacturing223.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Pretreat Battery" IURL="actPretreat%5FBattery882.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Pyrolysis/Smelting" IURL="actPyrolysisSLASHSmelting1118.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Pyrometallurgy" IURL="actPyrometallurgy886.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Reassemble Battery for Repurposing" IURL="actReassemble%5FBattery%5Ffor%5FRepurposing1322.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Reassemble Battery System" IURL="actReassemble%5FBattery%5FSystem714.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Recondition Battery During Installation" IURL="actRecondition%5FBattery%5FDuring%5FInstallation745.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Recondition Battery for Remanufacturing" IURL="actRecondition%5FBattery%5Ffor%5FRemanufacturing285.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Recondition Battery for Repurposing" IURL="actRecondition%5FBattery%5Ffor%5FRepurposing1318.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Reconfigure Battery" IURL="actReconfigure%5FBattery1365.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Reconfigure Battery for Traction Battery Application" IURL="actReconfigure%5FBattery%5Ffor%5FTraction%5FBattery%5FApplication749.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Recover Materials/Devices" IURL="actRecover%5FMaterialsSLASHDevices97.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Recycle" IURL="actRecycle172.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Reduce Size" IURL="actReduce%5FSize1056.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Remanufacture" IURL="actRemanufacture168.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Remanufacture Battery" IURL="actRemanufacture%5FBattery227.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Repair Battery" IURL="actRepair%5FBattery1305.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Replace or Repair Damaged Components for Remanufacturing" IURL="actReplace%5For%5FRepair%5FDamaged%5FComponents%5Ffor%5FRemanufacturing281.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Replace or Repair Damaged Components for Repurposing" IURL="actReplace%5For%5FRepair%5FDamaged%5FComponents%5Ffor%5FRepurposing1314.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Repurpose" IURL="actRepurpose164.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Scrub" IURL="actScrub1231.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Separate" IURL="actSeparate1060.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Shred" IURL="actShred1047.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Sinter/Screen, Pyrometallurgy" IURL="actSinterSLASHScreen,%5FPyrometallurgy1132.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Solvent Extract" IURL="actSolvent%5FExtract1227.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Strip" IURL="actStrip1235.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Test and Sort Batteries" IURL="actTest%5Fand%5FSort%5FBatteries92.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Test Battery Management System" IURL="actTest%5FBattery%5FManagement%5FSystem1275.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Test Battery with Battery Management System" IURL="actTest%5FBattery%5Fwith%5FBattery%5FManagement%5FSystem1338.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Test for Functionality" IURL="actTest%5Ffor%5FFunctionality704.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Test Thermal Behavior" IURL="actTest%5FThermal%5FBehavior1271.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Test/Certify Remanufactured Battery" IURL="actTestSLASHCertify%5FRemanufactured%5FBattery753.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Test/Certify Repurposed Battery" IURL="actTestSLASHCertify%5FRepurposed%5FBattery1283.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Treat Batteries at End-of-Life" IURL="actTreat%5FBatteries%5Fat%5FEnd%2Dof%2DLife24.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Treat Gas for Pyrometallurgy" IURL="actTreat%5FGas%5Ffor%5FPyrometallurgy1122.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Treat Gas from Mechanical Pretreat" IURL="actTreat%5FGas%5Ffrom%5FMechanical%5FPretreat1064.html" I|Ú IS_POOL="1"></LVL2>
+<LVL1  ITEXT="Concept Pool" IS_POOL="1" IURL=""></LVL1>
+<LVL2 ITEXT="Additives (Optional)" IURL="concAdditives%5F%28Optional%291146.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Alkaline or Acid Solution" IURL="concAlkaline%5For%5FAcid%5FSolution1179.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="alkaline or acide solution" IURL="concalkaline%5For%5Facide%5Fsolution1151.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Alloy" IURL="concAlloy905.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Authority" IURL="concAuthority106.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Available Battery Data (BMS)" IURL="concAvailable%5FBattery%5FData%5F%28BMS%295460.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Battery Chemistry" IURL="concBattery%5FChemistry2223.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Battery Management System Data" IURL="concBattery%5FManagement%5FSystem%5FData122.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Battery Materials" IURL="concBattery%5FMaterials5227.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="BMS Tested Batteries" IURL="concBMS%5FTested%5FBatteries1300.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Calcine" IURL="concCalcine1072.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Capital Expenditure" IURL="concCapital%5FExpenditure112.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Captured Batteries" IURL="concCaptured%5FBatteries28.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Cells and Modules" IURL="concCells%5Fand%5FModules1012.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Collected End-of-Life Batteries" IURL="concCollected%5FEnd%2Dof%2DLife%5FBatteries101.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Compounds" IURL="concCompounds183.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Compounds (to Hydrometallurgy)" IURL="concCompounds%5F%28to%5FHydrometallurgy%294948.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Conditioned Batteries" IURL="concConditioned%5FBatteries761.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Current Collectors" IURL="concCurrent%5FCollectors1008.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Damaged Cells and Modules" IURL="concDamaged%5FCells%5Fand%5FModules180.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="damaged or unusable other battery components" IURL="concdamaged%5For%5Funusable%5Fother%5Fbattery%5Fcomponents1438.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Damaged Other Battery Components" IURL="concDamaged%5FOther%5FBattery%5FComponents239.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Data" IURL="concData5264.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Disassembled Batteries" IURL="concDisassembled%5FBatteries235.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Discharged Batteries" IURL="concDischarged%5FBatteries261.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Downsized Materials" IURL="concDownsized%5FMaterials1074.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Emissions" IURL="concEmissions39.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="End-of-Life Treatment Data" IURL="concEnd%2Dof%2DLife%5FTreatment%5FData127.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Equipment Overhead" IURL="concEquipment%5FOverhead141.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Expertise" IURL="concExpertise64.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Feedstock" IURL="concFeedstock5198.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Flue Dust" IURL="concFlue%5FDust901.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Functionally Assessed Batteries" IURL="concFunctionally%5FAssessed%5FBatteries708.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Gas" IURL="concGas1068.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Government Incentives" IURL="concGovernment%5FIncentives60.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Governmental or Documentary Controls" IURL="concGovernmental%5For%5FDocumentary%5FControls5296.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Healthy Batteries for Reuse" IURL="concHealthy%5FBatteries%5Ffor%5FReuse129.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="healthy batteries for reuses" IURL="conchealthy%5Fbatteries%5Ffor%5Freuses45.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Healthy Battery Components and Systems" IURL="concHealthy%5FBattery%5FComponents%5Fand%5FSystems710.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Heat Pretreated Material" IURL="concHeat%5FPretreated%5FMaterial1141.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Infrastructure" IURL="concInfrastructure62.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Joined Batteries" IURL="concJoined%5FBatteries757.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Leachate" IURL="concLeachate1182.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Legal Requirements" IURL="concLegal%5FRequirements103.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Liquid Waste" IURL="concLiquid%5FWaste1253.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Lithium Carbonate" IURL="concLithium%5FCarbonate1149.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Loaded Leach Solution" IURL="concLoaded%5FLeach%5FSolution1158.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Loaded Solvent" IURL="concLoaded%5FSolvent1255.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="logistics tools" IURL="conclogistics%5Ftools119.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Manufacturing Scrap" IURL="concManufacturing%5FScrap35.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Market Demand" IURL="concMarket%5FDemand109.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Neutralizing agent" IURL="concNeutralizing%5Fagent5016.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="New Battery Cells or Modules Systems" IURL="concNew%5FBattery%5FCells%5For%5FModules%5FSystems31.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="New Other Battery Components" IURL="concNew%5FOther%5FBattery%5FComponents33.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Non-Active Battery Materials" IURL="concNon%2DActive%5FBattery%5FMaterials47.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="O2-Rich Air" IURL="concO2%2DRich%5FAir4952.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Organic Waste" IURL="concOrganic%5FWaste50.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Other" IURL="concOther5269.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Other Battery Components" IURL="concOther%5FBattery%5FComponents1006.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Pretreated Battery Materials" IURL="concPretreated%5FBattery%5FMaterials894.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Product Design" IURL="concProduct%5FDesign54.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Reassembled Batteries" IURL="concReassembled%5FBatteries241.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Recirculated Leach Solution" IURL="concRecirculated%5FLeach%5FSolution1153.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Recirculated Solvent Extractant" IURL="concRecirculated%5FSolvent%5FExtractant1251.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Reconditioned Batteries" IURL="concReconditioned%5FBatteries712.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Reconfigured Batteries" IURL="concReconfigured%5FBatteries764.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="reconfigured battery" IURL="concreconfigured%5Fbattery1375.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Recover Feedstock" IURL="concRecover%5FFeedstock5192.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Recovered Batteries" IURL="concRecovered%5FBatteries5276.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Recycle Waste" IURL="concRecycle%5FWaste5236.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Redeployed Traction Batteries" IURL="concRedeployed%5FTraction%5FBatteries41.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Reducing Agent (Optional)" IURL="concReducing%5FAgent%5F%28Optional%291138.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Regulations" IURL="concRegulations58.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Remanufacture Scrap" IURL="concRemanufacture%5FScrap178.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Repurpose Scrap" IURL="concRepurpose%5FScrap1429.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Repurposed Batteries" IURL="concRepurposed%5FBatteries1378.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Reuseable Other Battery Components" IURL="concReuseable%5FOther%5FBattery%5FComponents176.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Safety and Compliance Evaluated Batteries" IURL="concSafety%5Fand%5FCompliance%5FEvaluated%5FBatteries1303.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Scrubbing Solution" IURL="concScrubbing%5FSolution1257.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Scrubbing Solvent" IURL="concScrubbing%5FSolvent1259.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Shredded Battery Components" IURL="concShredded%5FBattery%5FComponents1070.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Slag" IURL="concSlag903.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Software Connected Batteries" IURL="concSoftware%5FConnected%5FBatteries759.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Solid Intermediate Product" IURL="concSolid%5FIntermediate%5FProduct1160.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Solid Material from Hydro Leaching" IURL="concSolid%5FMaterial%5Ffrom%5FHydro%5FLeaching899.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Solutions, Solvents, and Other Chemicals" IURL="concSolutions,%5FSolvents,%5Fand%5FOther%5FChemicals5195.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Solvent" IURL="concSolvent1249.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Solvent Extraction, Pyrometallurgy" IURL="concSolvent%5FExtraction,%5FPyrometallurgy4944.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Stack Gas" IURL="concStack%5FGas1014.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Standards" IURL="concStandards56.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Strip Liquor" IURL="concStrip%5FLiquor1263.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Strip Solution" IURL="concStrip%5FSolution1261.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Strip Solvent" IURL="concStrip%5FSolvent1265.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Supply Chain and Materials Availability" IURL="concSupply%5FChain%5Fand%5FMaterials%5FAvailability5316.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Supply Chains" IURL="concSupply%5FChains52.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="System Design" IURL="concSystem%5FDesign116.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Technology" IURL="concTechnology5331.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Technology Availability" IURL="concTechnology%5FAvailability124.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Tested and Sorted Batteries" IURL="concTested%5Fand%5FSorted%5FBatteries131.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Tested Batteries" IURL="concTested%5FBatteries263.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Thermally Analyzed Batteries" IURL="concThermally%5FAnalyzed%5FBatteries1298.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Tools and Systems" IURL="concTools%5Fand%5FSystems114.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Transportation" IURL="concTransportation66.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="treament at end of life datas" IURL="conctreament%5Fat%5Fend%5Fof%5Flife%5Fdatas37.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Untreated Materials" IURL="concUntreated%5FMaterials897.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Unusable Battery Components" IURL="concUnusable%5FBattery%5FComponents1440.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Unused BMS Data" IURL="concUnused%5FBMS%5FData5219.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Used Battery Cells or Modules Systems" IURL="concUsed%5FBattery%5FCells%5For%5FModules%5FSystems237.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Waste" IURL="concWaste5241.html" I|Ú IS_POOL="1"></LVL2>
+<LVL2 ITEXT="Wastewater" IURL="concWastewater43.html" I|Ú IS_POOL="1"></LVL2>
+<LVL1  ITEXT="Note Pool" IS_POOL="1" IURL=""></LVL1>
+<LVL2 ITEXT="Test Note" IURL="noteTest%5FNote6282.html" I|Ú IS_POOL="1"></LVL2>
+  <TABLE WIDTH=95% BORDER=0 ALIGN=left>
+
+    <TR><TD BGCOLOR="lightyellow">&nbsp;</TD></TR>
+    <TR><TD WIDTH=350 HEIGHT=340 VALIGN="top" BGCOLOR="lightyellow">
+    <DIV ID=MyTree>
+    </DIV>
+    <DIV ID=Debug>
+    </DIV>
+    </TD></TR>
+ </TABLE>
+<SCRIPT LANUGAGE="JScript">
+   document.onclick = function(){clickHandler(3);}
+   document.onmouseover = MakeBright;
+   document.onmouseout = MakeDark;
+</SCRIPT>
+<br clear=left>
+
+<center><p class="emaillink">
+<A class="emaillink" HREF="mailto:?subject=Re: Activity Modeling Project ''">Send Feedback</A></p></center>
+</BODY>
+</HTML>
