@@ -1,5 +1,15 @@
-# Production in a Circular Economy
-Web-based functional model for manufacturing in a circular economy
+# Reference Model for Lithium-Based-Traction Battery Recovery
+Web-based functional model for traction lithium battery recovery
+
+## Offline Viewing
+To view the model offline:
+1. Download the file TLB-R_offline.zip.
+2. Unzip the file.
+3. Inside the unzipped folder, open index.html in a web browser.
+4. On the left hand side, click the "Treat Traction Lithium Batteries at End-of-Life" link to open the model.
+5. Click on the activities (boxes) to see descriptions and to decompose the activity. Scroll down in the description frame (lower frame) to find the Decoposition link.
+6. To move up the model, scroll down in the main frame (top right) to find the Parent Activity link.
+7. Activities with a shadow have decompositions. Activities without a shadow may still have descriptions, but no further detail is provided.
 
 ## Website
 Visit the linked website to access and explore the model. 
@@ -12,4 +22,4 @@ To host the website locally:
 6. Navigate to the Server Address shown in your terminal.
 
 ## Model Files
-Download the 'pce/pce' folder to access the files for the Production in a Circular Economy Model in html format. View the 'pce/pce/images' folder to view images of the system diagrams.
+Download the 'tlb/tlb' folder to access the files for the Reference Model for Lithium-Based-Traction Battery Recovery in html format. View the 'tlb/tlb/images' folder to view images of the system diagrams.
