@@ -1,5 +1,5 @@
-# Electric Vehicle Battery Recovery
-Web-based functional model for electric vehicle battery recovery
+# Traction Lithium Battery Recovery
+Web-based functional model for traction lithium battery recovery
 
 ## Website
 Visit the linked website to access and explore the model. 
@@ -12,4 +12,6 @@ To host the website locally:
 6. Navigate to the Server Address shown in your terminal.
 
 ## Model Files
-Download the 'evb/evb' folder to access the files for the Electric Vehicle Battery Recovery Model in html format. View the 'evb/evb/images' folder to view images of the system diagrams.
+Download the 'tlb/tlb' folder to access the files for the Traction Lithium Battery Recovery Model in html format. View the 'tlb/tlb/images' folder to view images of the system diagrams.
+
+**Disclaimer:** Certain commercial equipment, instruments, or materials are identified in this documentation to foster understanding. Such identification does not imply recommendation or endorsement by the National Institute of Standards and Technology, nor does it imply that the materials or equipment identified are necessarily the best available for the purpose.
