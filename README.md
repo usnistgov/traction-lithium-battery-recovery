@@ -38,7 +38,7 @@ copyright, fair use and licensing; see
 https://www.nist.gov/director/copyright-fair-use-and-licensing-statements-srd-data-and-software
 
 You may cite the use of this data as follows:
-Matthew Triebe (2026), Traction Lithium Battery Recovery Reference Model,
+Matthew J Triebe, Jamie L Weaver (2026), Traction Lithium Battery Recovery Reference Model,
 Version 1.0.0, National Institute of Standards and Technology,
 https://doi.org/10.18434/mds2-4191 (Accessed: [give download date])
 
