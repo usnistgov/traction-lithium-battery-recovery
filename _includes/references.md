@@ -83,6 +83,8 @@
 <br>
 <li>Huang C, Lipatnikov AN, Lövström C, Smajovic N, Andersson L, Ismail A (2025) Experimental investigation of dust explosions with a focus on black mass in battery recycling. Journal of Loss Prevention in the Process Industries, 94, 105526. https://doi.org/10.1016/j.jlp.2024.105526</li>
 <br>
+<li>Illa Font CH, Siqueira HV, Machado Neto JE, Santos JLF, Stevan SL Jr, Converti A, Corrêa FC (2023) Second life of lithium-ion batteries of electric vehicles: a short review and perspectives. Energies, 16, 953. https://doi.org/10.3390/en16020953</li>
+<br>
 <li>Jaguemont J, Bardé F (2023) A critical review of lithium-ion battery safety testing and standards. Applied Thermal Engineering, 231, 121014. https://doi.org/10.1016/j.applthermaleng.2023.121014</li>
 <br>
 <li>Jena KK, AlFantazi A, Choi DS, Liao K, Mayyas A (2024) Recycling spent lithium ion batteries and separation of cathode active materials: structural stability, morphology regularity, and waste management. Industrial & Engineering Chemistry Research, 63(8), 3483-3490. https://doi.org/10.1021/acs.iecr.3c03673</li>
@@ -125,7 +127,9 @@
 <br>
 <li>Marshall J, Gastol D, Sommerville R, Middleton B, Goodship V, Kendrick E (2020) Disassembly of Li ion cells—characterization and safety considerations of a recycling scheme. Metals, 10(6), 773. https://doi.org/10.3390/met10060773</li>
 <br>
-<li>McLaughlin W, Adams TS (1999) Li reclamation process (U.S. Patent No. US5888463A). United States Patent and Trademark Office (as cited in Pinegar et al., (2019)).</li>
+<li>Martinez-Laserna E, Sarasketa-Zabala E, Villarreal Sarria I, Stroe DI, Swierczynski M, Warnecke A, Timmermans JM, Goutam S, Omar N, Rodriguez P (2018) Technical viability of battery second life: a study from the ageing perspective. IEEE Transactions on Industry Applications, 54, 2703-2713. https://doi.org/10.1109/TIA.2018.2801262</li>
+<br>
+<li>McLaughlin W, Adams TS (1999) Li reclamation process (U.S. Patent No. US5888463A). United States Patent and Trademark Office</li>
 <br>
 <li>Melin HE (2019) State-of-the-art in reuse and recycling of lithium-ion batteries - A research review. Circular Energy Storage, 1, 1-57. A report commissioned by The Swedish Energy Agency</li>
 <br>
@@ -139,11 +143,15 @@
 <br>
 <li>Murphy L, Crawford C (2025) Data-driven classification of lithium-ion batteries for second-life applications. Journal of Energy Storage, 133, 117994. https://doi.org/10.1016/j.est.2025.117994</li>
 <br>
+<li>Nazim MS, Elavarasan RM (2026) Extending battery lifecycles: a holistic review of second-life lithium-ion technology in sustainable energy systems from assessment to emerging trends. Renewable and Sustainable Energy Reviews, 233, 116848. https://doi.org/10.1016/j.rser.2026.116848</li>
+<br>
 <li>Neumann J, Petranikova M, Meeus M, Gamarra JD, Younesi R, Winter M, Nowak S (2022) Recycling of lithium-ion batteries—current state of the art, circular economy, and next generation recycling. Advanced Energy Materials, 12(17), 2102917. https://doi.org/10.1002/aenm.202102917</li>
 <br>
 <li>Nguyen TH, Lee MS (2018) A review on the separation of lithium ion from leach liquors of primary and secondary resources by solvent extraction with commercial extractants. Processes, 6(5), 55. https://doi.org/10.3390/pr6050055</li>
 <br>
 <li>Nguyen VNH, Lee MS (2020) Separation of Co (II), Cu (II), Ni (II) and Mn (II) from synthetic hydrochloric acid leaching solution of spent lithium ion batteries by solvent extraction. Physicochemical Problems of Mineral Processing, 56(4), 599-610. https://doi.org/10.37190/ppmp/122784</li>
+<br>
+<li>O’Keefe TJ (1993) Method for stripping metals in solvent extraction (U.S. Patent No. 5228903 A). U.S. Patent and Trademark Office.</li>
 <br>
 <li>Pakostova E, Graves J, Latvyte E, Maddalena G, Horsfall L (2024). A novel closed-loop biotechnology for recovery of cobalt from a lithium-ion battery active cathode material. Microbiology, 170(7), 001475. https://doi.org/10.1099/mic.0.001475</li>
 <br>
@@ -160,6 +168,8 @@
 <li>Pinegar H, Smith YR (2019) Recycling of end-of-life lithium ion batteries, Part I: Commercial processes. Journal of Sustainable Metallurgy, 5(3), 402-416. https://doi.org/10.1007/s40831-019-00235-9</li>
 <br>
 <li>Pinegar H, Smith YR (2020) Mechanical Beneficiation of End-of-Life Lithium-Ion Battery Components. In Energy Technology 2020: Recycling, Carbon Dioxide Management, and Other Technologies (pp 259-267). Cham: Springer International Publishing. https://doi.org/10.1007/978-3-030-36830-2_25</li>
+<br>
+<li>Pipeline and Hazardous Materials Safety Administration (2024) Lithium Battery Guide for Shippers. Available at https://www.phmsa.dot.gov/lithiumbatteries</li>
 <br>
 <li>Qing J, Wu X, Zeng L, Guan W, Cao Z, Li Q, Wang M, Zhang G, Wu S (2023) Novel approach to recycling of valuable metals from spent lithium-ion batteries using hydrometallurgy, focused on preferential extraction of lithium. Journal of Cleaner Production, 431, 139645. https://doi.org/10.1016/j.jclepro.2023.139645</li>
 <br>
@@ -187,9 +197,11 @@
 <br>
 <li>Rinne T, Klemettinen A, Klemettinen L, Ruismäki R, O’Brien H, Jokilaakso A, Serna-Guerrero R (2021) Recovering value from end-of-life batteries by integrating froth flotation and pyrometallurgical copper-slag cleaning. Metals, 12(1), 15. https://doi.org/10.3390/met12010015</li>
 <br>
+<li>Roy JJ, Verma V, Srinivasan M (2026) Second-life application of electric vehicle batteries: electrode deterioration, automated disassembly, second-life extension, and applications. ChemSusChem, 19, e202500845. https://doi.org/10.1002/cssc.202500845</li>
+<br>
 <li>Rufino Júnior CA, Riva Sanseverino E, Gallo P, Koch D, Diel S, Walter G, Trilla L, Ferreira VJ, Pérez GB, Kotak Y, Eichman J, Schweiger HG, Zanin H (2024) Towards to battery digital passport: reviewing regulations and standards for second-life batteries. Batteries, 10(4), 115. https://doi.org/10.3390/batteries10040115</li>
 <br>
-<li>Saloojee F, Lloyd J (2015) Lithium battery recycling process. Department of Environmental Affairs Development Bank of South Africa (Project No. DB-074 (RW1/1016)), 27(0) (as cited in Pinegar et al. (2019))</li>
+<li>Saloojee F, Lloyd J (2015) Lithium battery recycling process. Department of Environmental Affairs Development Bank of South Africa (Project No. DB-074 (RW1/1016)), 27(0)</li>
 <br>
 <li>Sonoc A, Jeswiet J, Ghahreman A (2021) Hydrometallurgical recycling of lithium-ion battery electrodes (U.S. Patent No. US20230187720A1) United States Patent and Trademark Office.</li>
 <br>
@@ -204,6 +216,10 @@
 <li>Tang YC, Wang JZ, Shen YH (2023) Separation of valuable metals in the recycling of lithium batteries via solvent extraction. Minerals, 13(2), 285. https://doi.org/10.3390/min13020285</li>
 <br>
 <li>Tedjar F, Foudraz JC (2013) Method for the mixed recycling of lithium-based anode batteries and cells (Canadian Patent No. CA 2559928 C). Canadian Intellectual Property Office (as cited in Pinegar et al., (2019)).</li>
+<br>
+<li>US Environmental Protection Agency (2025) Voluntary Battery Labeling Guidelines. Available at https://www.epa.gov/electronics-batteries-management/voluntary-battery-labeling-guidelines.</li>
+<br>
+<li>US Environmental Protection Agency (2026) Battery Collection Best Practices Report to Congress. Available at https://www.epa.gov/system/files/documents/2026-05/battery-collection-best-practices-report-to-congress_508.pdf</li>
 <br>
 <li>Vanderbruggen A, Salces A, Ferreira A, Rudolph M, Serna-Guerrero R (2022) Improving separation efficiency in end-of-life lithium-ion batteries flotation using attrition pre-treatment. Minerals, 12(1), 72. https://doi.org/10.3390/min12010072</li>
 <br>
