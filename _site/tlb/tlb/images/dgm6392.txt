@@ -1,4 +1,4 @@
 Visible_Rect: 9858,3772
 actuse6393: 4897,2059,5859,3017
 actuse6422: 3134,905,4177,1863
-Bitmap_Rect: 1331,510
+Bitmap_Rect: 2096,780

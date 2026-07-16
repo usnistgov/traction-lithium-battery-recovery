@@ -9,7 +9,11 @@ Matthew Triebe
   matthew.triebe@nist.gov
 
 ## Website
-Visit the linked website to access and explore the model. DOI: https://doi.org/10.18434/mds2-4191
+Visit the linked website to access and explore the model.
+
+Website: https://pages.nist.gov/traction-lithium-battery-recovery/index.html
+DOI: https://doi.org/10.18434/mds2-4191
+
 To host the website locally:
 1. Download or clone the repository
 2. Navigate to your repository in the command line

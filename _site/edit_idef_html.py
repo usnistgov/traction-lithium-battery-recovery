@@ -87,7 +87,7 @@ def remove_from_TOC(soup, foldername):
         for l in links:
             #if the folder isn't in the link path already, add it
             if foldername not in l['href']:
-                #add folder nesting to href links, for example like the following: "{{'tlb/actuseProduction%5Fin%5Fa%5Fcircular%5Feconomy25.html' | relative_url}}" where tlb is the foldername
+                #add folder nesting to href links, for example like the following: "{{'tlb/actuseTraction%5FLithium%5FBattery%5FRecovery25.html' | relative_url}}" where tlb is the foldername
                 # change href attribute 
                 l['href'] = "{{" + "'{fn}/".format(fn=foldername) + l['href'] + "' | relative_url}}"
     bodytag = soup.find("body") #remove extraneous breaks at the beginning

@@ -1,16 +1,124 @@
-<HTML>
-<STYLE type="text/css">
-p{margin-top:0; margin-bottom:0;}
-</STYLE>
-<BODY>
-<BOLD><H2>Activity-in-Diagram: Test Battery Management System</H2>
-<p class="textfield" id="creator"><B>Creator</B>Triebe, Weaver</p>
-<p class="textfield" id="description"><B>Description </B></p>Notes:<br>None<br><br>Definition:<br>Battery Management System (BMS) - electronic device that controls or manages the electric and thermal functions of the battery system and that provides communication between the battery system and other vehicle/device controllers. Adapted from ISO/IEC 15118-1:2013.<br><br>Standards:<br>IEC 61508-1:2010, Functional safety of electrical/electronic/programmable electronic safety-related systems - Part 1: General requirements (see Functional Safety and IEC 61508)<br><br>IEC 62933-1:2024, Electrical energy storage (EES) systems - Part 1: Vocabulary<br><br>IEC 62619:2022, Secondary cells and batteries containing alkaline or other non-acid electrolytes - Safety requirements for secondary lithium cells and batteries, for use in industrial applications.<br><br>ISO 26262-1:2018, Road vehicles - Functional safety Part 1: Vocabulary<br><br>ISO 50001:2018, Energy management systems - Requirements with guidance for use<br><br>UL 1741, Inverters, Converters, Controllers and Interconnection System Equipment for Use with Distributed Energy Resources<br><br>UL 1973, ANSI/CAN/UL Batteries for Use in Stationary and Motive Auxiliary Power Applications<br><br>IEEE 1547-2018, Standard for Interconnection and Interoperability of Distributed Energy Resources with Associated Electric Power Systems Interfaces<br><br>IEEE 2686-2024, Recommended Practice for Battery Management Systems in Stationary Energy Storage Applications<br><br>NERC PRC-005-2, Protection System Maintenance<br><br>References:<br>Brandl M, Gall H, Wenger M, Lorentz V, Giegerich M, Baronti F, Fantechi G, Fanucci L, Roncella R, Saletti R, Saponara S, Thaler A, Cifrain M, Prochazka W (2012) Batteries and battery management systems for electric vehicles. 2012 Design, Automation & Test in Europe Conference & Exhibition (DATE), pp 971-976. https://doi.org/10.1109/DATE.2012.6176637<br><br>Gabbar HA, Othman AM, Abdussami MR (2021) Review of battery management systems (BMS) development and industrial standards. Technologies, 9(2), 28. https://doi.org/10.3390/technologies9020028<br><br>Lelie M, Braun T, Knips M, Nordmann H, Ringbeck F, Zappen H, Sauer DU (2018) Battery management system hardware concepts: An overview. Applied Sciences, 8(4), 534. https://doi.org/10.3390/app8040534<br><br>Rahimi-Eichi H, Ojha U, Baronti F, Chow M-Y (2013) Battery Management System: An Overview of Its Application in the Smart Grid and Electric Vehicles. IEEE Industrial Electronics Magazine, 7(2):4-16. https://doi.org/10.1109/MIE.2013.2250351<br><br>Rahmawatie B, Sutopo W, Fahma F, Purwanto A, Nizam M, Louhenapessy BB, Mulyono AB (2017) Designing framework for standardization and testing requirements of battery management system for electric vehicle application. 2017 4th International Conference on Electric Vehicular Technology (ICEVT), pp 7-12. https://doi.org/10.1109/ICEVT.2017.8323525<br><br>
-<p id="owner"><B>Owning Diagram </B><A class="diagram" HREF=dgmTest%5FBattery%5Fwith%5FBattery%5FManagement%5FSystem1342.html>Test Battery with Battery Management System</A></p>
-<H2>Input</H2>
-<p class="poolitem"><A HREF=concuseThermally%5FAnalyzed%5FBatteries1347.html>Thermally Analyzed Batteries</A></p>
-<H2>Output</H2>
-<p class="poolitem"><A HREF=concuseRejected%5FBatteries7035.html>Rejected Batteries</A></p>
-<p class="poolitem"><A HREF=concuseBMS%5FTested%5FBatteries1354.html>BMS Tested Batteries</A></p>
-</BODY>
-</HTML>
+---
+layout: default
+---
+
+<nav>
+ <ul class="diag-nav-bar">
+  <li class="diag-nav-item">
+   <a class="navlinks" href="#Decomposition">
+    Decomposition
+   </a>
+  </li>
+  <li class="diag-nav-item">
+   <a class="navlinks" href="#Input">
+    ICOM
+   </a>
+  </li>
+ </ul>
+</nav>
+<h2>
+ Activity-in-Diagram: Test Battery Management System
+</h2>
+<p class="description-info" id="description">
+ <b>
+  Description
+ </b>
+</p>
+Notes:
+<br/>
+None
+<br/>
+<br/>
+Definition:
+<br/>
+Battery Management System (BMS) - electronic device that controls or manages the electric and thermal functions of the battery system and that provides communication between the battery system and other vehicle/device controllers. Adapted from ISO/IEC 15118-1:2013.
+<br/>
+<br/>
+Standards:
+<br/>
+IEC 61508-1:2010, Functional safety of electrical/electronic/programmable electronic safety-related systems - Part 1: General requirements (see Functional Safety and IEC 61508)
+<br/>
+<br/>
+IEC 62933-1:2024, Electrical energy storage (EES) systems - Part 1: Vocabulary
+<br/>
+<br/>
+IEC 62619:2022, Secondary cells and batteries containing alkaline or other non-acid electrolytes - Safety requirements for secondary lithium cells and batteries, for use in industrial applications.
+<br/>
+<br/>
+ISO 26262-1:2018, Road vehicles - Functional safety Part 1: Vocabulary
+<br/>
+<br/>
+ISO 50001:2018, Energy management systems - Requirements with guidance for use
+<br/>
+<br/>
+UL 1741, Inverters, Converters, Controllers and Interconnection System Equipment for Use with Distributed Energy Resources
+<br/>
+<br/>
+UL 1973, ANSI/CAN/UL Batteries for Use in Stationary and Motive Auxiliary Power Applications
+<br/>
+<br/>
+IEEE 1547-2018, Standard for Interconnection and Interoperability of Distributed Energy Resources with Associated Electric Power Systems Interfaces
+<br/>
+<br/>
+IEEE 2686-2024, Recommended Practice for Battery Management Systems in Stationary Energy Storage Applications
+<br/>
+<br/>
+NERC PRC-005-2, Protection System Maintenance
+<br/>
+<br/>
+References:
+<br/>
+Brandl M, Gall H, Wenger M, Lorentz V, Giegerich M, Baronti F, Fantechi G, Fanucci L, Roncella R, Saletti R, Saponara S, Thaler A, Cifrain M, Prochazka W (2012) Batteries and battery management systems for electric vehicles. 2012 Design, Automation &amp; Test in Europe Conference &amp; Exhibition (DATE), pp 971-976. https://doi.org/10.1109/DATE.2012.6176637
+<br/>
+<br/>
+Gabbar HA, Othman AM, Abdussami MR (2021) Review of battery management systems (BMS) development and industrial standards. Technologies, 9(2), 28. https://doi.org/10.3390/technologies9020028
+<br/>
+<br/>
+Lelie M, Braun T, Knips M, Nordmann H, Ringbeck F, Zappen H, Sauer DU (2018) Battery management system hardware concepts: An overview. Applied Sciences, 8(4), 534. https://doi.org/10.3390/app8040534
+<br/>
+<br/>
+Rahimi-Eichi H, Ojha U, Baronti F, Chow M-Y (2013) Battery Management System: An Overview of Its Application in the Smart Grid and Electric Vehicles. IEEE Industrial Electronics Magazine, 7(2):4-16. https://doi.org/10.1109/MIE.2013.2250351
+<br/>
+<br/>
+Rahmawatie B, Sutopo W, Fahma F, Purwanto A, Nizam M, Louhenapessy BB, Mulyono AB (2017) Designing framework for standardization and testing requirements of battery management system for electric vehicle application. 2017 4th International Conference on Electric Vehicular Technology (ICEVT), pp 7-12. https://doi.org/10.1109/ICEVT.2017.8323525
+<br/>
+<br/>
+<p class="description-info" id="owner">
+ <b>
+  Owning Diagram:
+ </b>
+ <a class="diagram" href="dgmTest%5FBattery%5Fwith%5FBattery%5FManagement%5FSystem1342.html">
+  Test Battery with Battery Management System
+ </a>
+</p>
+<div class="flex-container-two">
+ <div>
+  <h2 id="Input">
+   Input
+  </h2>
+  <div class="flex-items">
+   <p class="poolitem">
+    <a href="concuseThermally%5FAnalyzed%5FBatteries1347.html">
+     Thermally Analyzed Batteries
+    </a>
+   </p>
+  </div>
+ </div>
+ <div>
+  <h2 id="Output">
+   Output
+  </h2>
+  <div class="flex-items">
+   <p class="poolitem">
+    <a href="concuseRejected%5FBatteries7035.html">
+     Rejected Batteries
+    </a>
+   </p>
+   <p class="poolitem">
+    <a href="concuseBMS%5FTested%5FBatteries1354.html">
+     BMS Tested Batteries
+    </a>
+   </p>
+  </div>
+ </div>
+</div>
